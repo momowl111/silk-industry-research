@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>绢纺行业调查与绵球工厂测算｜2026.09.28</title>
+<title>绢纺行业调查、绵球测算与三方租线合作｜2026.09.28</title>
 <style>
 :root{--ink:#183731;--muted:#5e706a;--paper:#f6f4ed;--line:#d9e0d9;--accent:#986c29;--red:#ac3e35}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:16px;line-height:1.85}a{color:#126d5d;text-underline-offset:3px}header{background:#183731;color:#fff;padding:54px max(6vw,24px)}header .eyebrow{color:#b9d6c8;letter-spacing:2px;font-size:13px}h1{font-family:"Microsoft YaHei",sans-serif;font-size:clamp(28px,4vw,46px);margin:14px 0;line-height:1.4;font-weight:600}header p{max-width:900px;color:#e0eae3}header .meta{font-size:14px;color:#c1d0c5}main{max-width:1440px;margin:0 auto;padding:32px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:40px}nav{position:sticky;top:24px;align-self:start;max-height:92vh;overflow:auto;font-size:13px}nav a{display:block;text-decoration:none;padding:7px 10px;border-left:2px solid transparent}nav a:hover{border-color:var(--accent);background:#e9ede5}nav b{display:block;padding:8px 10px;color:var(--muted)}article{min-width:0}.intro,.calculator{background:white;border:1px solid var(--line);border-radius:12px;padding:28px;margin:0 0 30px}.flow{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.flow span{background:#edf3ed;padding:8px 13px;border-radius:5px;font-size:14px}.flow span:not(:last-child)::after{content:" →";color:#7b8d80;margin-left:8px}h2{font-size:25px;margin:52px 0 20px;padding-top:16px;border-top:2px solid var(--line);scroll-margin-top:20px}h3{font-size:21px;margin:0 0 10px}.notice{padding:12px 16px;background:#fff5df;border-left:4px solid #bf9850;font-size:14px}.small{font-size:13px;color:var(--muted)}p{margin:14px 0}li{margin:6px 0}.table-wrap{overflow-x:auto;margin:22px 0}table{width:100%;border-collapse:collapse;font-size:14px;background:white}th,td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}th{background:#e8efe7;font-weight:600}tr:nth-child(even) td{background:#fbfcf9}.fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:22px 0}label{display:block;font-size:13px;color:var(--muted)}input{display:block;width:100%;font-size:18px;margin-top:6px;padding:9px 10px;border:1px solid #aebeb3;border-radius:5px;color:var(--ink);background:#fff}input:focus{outline:2px solid #478b73;outline-offset:2px}button{padding:9px 18px;border:1px solid #b2beb3;border-radius:5px;cursor:pointer;background:#ecf2eb;color:var(--ink);font-size:14px}.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}.metric{border:1px solid var(--line);border-radius:7px;padding:15px;background:#f8faf6}.metric span{display:block;font-size:13px;color:var(--muted)}.metric strong{display:block;font-size:25px;margin-top:6px}.negative{color:var(--red)}.positive{color:#19765b}.error{color:var(--red)}.bar{height:9px;background:#ebeee8;border-radius:5px;overflow:hidden;margin-top:9px}.bar>i{display:block;height:100%;background:#2e8067;max-width:100%}.foot{border-top:1px solid var(--line);padding:24px;color:var(--muted);font-size:13px}.print{float:right}strong{font-weight:650}
@@ -10,21 +10,107 @@
 
 .model-actions{display:flex;gap:12px;flex-wrap:wrap}.calculator .print{float:none}.calculator{scroll-margin-top:20px}.formula{padding:14px 16px;background:#f1f5ef;border-left:3px solid #2e8067;font-size:14px;overflow-wrap:anywhere}.calculation-detail{margin:18px 0}.calculation-detail summary{cursor:pointer;font-weight:600;color:#126d5d}.calculation-detail .table-wrap{margin:12px 0}.calculator button:disabled{opacity:.5;cursor:not-allowed}.calculator input{min-width:0}.calculator [hidden]{display:none!important}.calculator .fields label{color:#304f45}.calculator .metric strong{overflow-wrap:anywhere}@media(max-width:760px){.calculator .fields{grid-template-columns:1fr}}@media print{.model-actions{display:none}.calculator{break-before:auto;break-inside:auto}.calculator h3{break-after:avoid}}
 .pending{color:var(--muted)}.base-case td{background:#e5f2e8!important}.calculator .eyebrow{font-size:13px;color:var(--muted)}#yield-scenarios{scroll-margin-top:20px}#factory-data h3:not(:first-of-type){margin-top:30px}
+#cooperation-plan h3:not(:first-of-type){margin-top:30px;padding-top:15px;border-top:1px solid var(--line)}#cooperation-plan [id]{scroll-margin-top:24px}@media(max-width:760px){#cooperation-terms + .table-wrap table{min-width:0}#cooperation-terms + .table-wrap th:first-child,#cooperation-terms + .table-wrap td:first-child{width:30%}#cooperation-terms + .table-wrap th,#cooperation-terms + .table-wrap td{padding:9px}}
 </style></head><body>
-<header><div class="eyebrow">产业研究 · 家庭投资决策参考</div><h1>中国国内绢纺行业调查</h1><p>从一根蚕丝到一座工厂：生产流程、最新市场、设备与团队、建厂合规、收购尽调和现金流。</p><div class="meta">行业资料截至2026年9月27日 · 绵球工厂测算更新于2026年9月28日 · 18个主题</div></header>
-<main><nav id="toc" aria-label="报告目录"><b>阅读导航</b><a href="#factory-data">本次工厂：已知情况与暂估数据</a><a href="#yield-scenarios">出绵率与供料量对照</a><a href="#raw-model">原料模型：供料投入与产出</a><a href="#product-model">绵球模型：产量与利润</a><a href="#raw-discussion">待补：原料与合作方式</a></nav><article>
-<section class="intro"><strong>先验证六件事，再决定投入规模</strong><div class="flow"><span>客户与规格</span><span>原料与试制</span><span>合格产品成本</span><span>场地与合规</span><span>新建或收购</span><span>现金与回款</span></div><p class="small">正文中的数据均附来源。企业案例不代表行业平均水平；建议与假设测算已单独标明。</p></section>
+<header><div class="eyebrow">产业研究 · 家庭投资决策参考</div><h1>中国国内绢纺行业调查</h1><p>从绢纺原料到绵球经营：行业流程、工厂测算、三方租线合作、现场管理与资金回收。</p><div class="meta">行业资料截至2026年9月27日 · 工厂测算与合作分析更新于2026年9月28日 · 合作专题＋双模型＋18个行业主题</div></header>
+<main><nav id="toc" aria-label="报告目录"><b>阅读导航</b><a href="#cooperation-plan">三方租线合作：情况与判断</a><a href="#cooperation-material">原料投入：供货还是投资</a><a href="#cooperation-control">现场、库存与回款控制</a><a href="#cooperation-pilot">试运行步骤与停止条件</a><a href="#cooperation-terms">三方见面：待谈条件清单</a><a href="#factory-data">本次工厂：已知情况与暂估数据</a><a href="#yield-scenarios">出绵率与供料量对照</a><a href="#raw-model">原料模型：供料投入与产出</a><a href="#product-model">绵球模型：产量与利润</a><a href="#raw-discussion">待补：原料与合作方式</a></nav><article>
+<section class="intro"><strong>先验证六件事，再决定投入规模</strong><div class="flow"><span>客户与规格</span><span>原料与试制</span><span>合格产品成本</span><span>场地与合规</span><span>租线与合作条件</span><span>现金与回款</span></div><p class="small">正文中的数据均附来源。企业案例不代表行业平均水平；建议与假设测算已单独标明。</p></section>
 
+<section class="calculator" id="cooperation-plan" aria-labelledby="cooperation-title">
+  <div class="eyebrow">2026年9月28日 · 三方租线合作专题 · 情况来自沟通，建议待验证</div>
+  <h3 id="cooperation-title">三方合作怎么谈：先落实责任与回款，再扩大原料投入</h3>
+  <div class="notice"><strong>目前判断：</strong>原料、设备、技术和客户可以形成互补，值得继续核实。但若原料方承担垫资和经营损失，却不能有效管理生产、库存与回款，风险就会集中到原料方。现阶段宜先谈有限投入的试运行，不宜先大批供料，再寻找管理人员和买家。</div>
+
+  <h3 id="cooperation-facts">1．目前知道什么，还有什么没谈清</h3>
+  <p>以下来自目前沟通，尚未通过合同、生产记录和财务凭证核验。场地设备方因资金周转困难，有一条闲置生产线拟出租，并可提供负责人；原料方熟悉绢纺原料，拟负责供料；技术销售方有工厂经验和销售渠道，但尚无明确人员能长期管理拟租生产线。产品以绵球外卖为主。</p>
+  <p><strong>收费方式、现场负责人能力、实际采购承诺、各项费用承担、股权和亏损分担均未确定。</strong>“合作”这个称呼本身，不能证明三方已经共同承担经营风险。</p>
+  <p class="small">此前提到的近一年绵球实际产量约 300–400 吨，是对这家工厂的描述；尚不能确认就是拟租闲置线的产量或能力。计算器中的 350 吨为情景取值，40% 为预算得率假设，据此推算的 875 吨原料量不是该线实测数据。</p>
+
+  <h3 id="cooperation-roles">2．把三方贡献写成能执行的责任</h3>
+  <p class="small">手机上可左右滑动下方三列表格，查看完整内容。</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th scope="col">参与方</th><th scope="col">可提供的价值</th><th scope="col">需要落实的责任</th></tr></thead>
+    <tbody>
+      <tr><td>原料方</td><td>原料来源、采购和分级经验，可能提供周转资金</td><td>原料规格、计价与结算方式、供料节奏、垫资上限；相应的知情、盘点和付款审批权</td></tr>
+      <tr><td>场地设备方</td><td>厂房、生产线、当地人员</td><td>合法可用的场地设备、稳定水电汽及污水处理条件；维修、停机责任和负责人职责</td></tr>
+      <tr><td>技术销售方</td><td>工艺经验、质量判断、客户渠道</td><td>具体技术人员、到场安排和考核；买家、产品标准、价格机制、验收及付款条件</td></tr>
+    </tbody>
+  </table></div>
+  <p>收取合理租金是正常交易。若同时收租、收管理费并参与分红，应分别说明对应的贡献、责任和风险，避免同一项贡献重复计价。</p>
+  <p><strong>现场必须有一个真正负责生产的人。</strong>他要能组织配料和生产、处理质量问题、核对损耗、管理人员和设备，并接受考核与更换。只协调水电和工人，不等于能管理工艺；远程技术建议也不等于已经落实驻场管理。</p>
+  <p>“绵球好卖”需落实到本项目的样品和交易条件。技术销售方若直接收购，谈清按约定质量验收的数量、价格和账期；若仅介绍客户，按销售服务评价其贡献。介绍客户、产品被接受和货款到账，是三个不同阶段。</p>
+
+  <h3 id="cooperation-material">3．原料进入项目，先选清楚是哪种身份</h3>
+  <p class="small">手机上可左右滑动下方三列表格，查看完整内容。</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th scope="col">安排</th><th scope="col">原料方取得什么</th><th scope="col">主要边界</th></tr></thead>
+    <tbody>
+      <tr><td>销售供料</td><td>按约定取得原料货款及贸易利润</td><td>明确买方、验收、价格和付款时间；未收款期间仍存在信用风险</td></tr>
+      <tr><td>赊销垫料</td><td>原料货款及贸易利润，同时承担垫资</td><td>明确欠款、信用额度和停料条件；赊销不会自动形成股权或分红权</td></tr>
+      <tr><td>自有原料委托加工</td><td>拥有约定的材料、产品及销售收益，支付加工等费用</td><td>明确货权、损耗、质量和加工费；销售及资金风险通常仍需原料方承担</td></tr>
+      <tr><td>原料作价投资</td><td>按约定享有投资权益并承担投资风险</td><td>确定估值、出资手续和退出规则，不能默认原料价款可随时收回</td></tr>
+    </tbody>
+  </table></div>
+  <p>销售供料也可能约定账期，表中单列“赊销垫料”是为了突出持续垫资。具体法律及税务性质以实际安排为准。避免一边不断送原料，一边既没有清晰应收账款，也没有落实投资权益。</p>
+
+  <h3 id="cooperation-control">4．租线与加工分清，生产和货款都要管得住</h3>
+  <p><strong>自行租线经营：</strong>先确定谁是经营主体，由谁组织生产、雇工、采购辅料和对外销售；租金、水电汽、维修、环保运行等费用逐项分配。<strong>委托加工：</strong>由加工方按约定组织生产，重点约定加工费、质量、损耗、交付及材料保管。两种模式不能只换一个名称，却把责任留空。</p>
+  <ul>
+    <li>每批原料有验收、重量和计价依据；投入、在制品、各等级绵球、副产品、废弃物分别记录和核对。</li>
+    <li>写清原料及各阶段产品归属，分区或标识保管，约定盘点、查账与出库审批权限，未经授权不得挪用或处分。</li>
+    <li>收款进入与交易主体相符、可独立核算的账户；明确付款审批和对账，避免与场地设备方原有周转资金混用。</li>
+    <li>股权比例之外，还要有实际管理权限、异常报告和更换负责人的机制。</li>
+  </ul>
+  <p class="small">独立账目、货权条款和账户管理有助于举证及控制风险，但不能保证绝对隔离债务、查封或经营中断。合同约定的内部付款顺序，也不等于法定清偿优先权。</p>
+
+  <h3 id="cooperation-diligence">5．核实资金困难的原因和生产线能否持续使用</h3>
+  <p>资金困难可能来自回款慢、债务压力，也可能与经营亏损有关，现阶段不能直接下结论。核对近期投料、产销、收款和费用凭证；查明设备产权、出租权限、抵押或查封情况，以及欠薪、欠电费等是否会影响开工。核实实际经营主体、工艺和环保等手续是否匹配，不能默认原厂手续可直接覆盖新的经营安排。</p>
+  <p>法律提供的是特定条件下的救济，并非生产安全保证：</p>
+  <ul>
+    <li><a href="https://www.court.gov.cn/zixun/xiangqing/233181.html" target="_blank" rel="noopener noreferrer">《民法典》第724条</a>：非承租人原因导致租赁物因查封等法定情形无法使用，承租人可解除合同；这不意味着能够立即复产或收回全部损失。</li>
+    <li><a href="https://www.court.gov.cn/zixun/xiangqing/233181.html" target="_blank" rel="noopener noreferrer">《民法典》第783条</a>：委托加工中，未支付加工报酬等价款可能涉及承揽人留置或拒绝交付工作成果，另有约定的除外。应明确结算、交付和保管责任。</li>
+    <li><a href="https://xzfy.moj.gov.cn/c/2021-01-06/487747.shtml" target="_blank" rel="noopener noreferrer">《企业破产法》第38条</a>：破产受理后，不属于债务人的财产，权利人原则上可通过管理人取回，法律另有规定的除外；并不等于随时可自行把货拉走。</li>
+  </ul>
+  <p class="small">签约前，应由当地律师结合资产权属、实际经营主体和交易模式审查合同；现场可生产、产品有买家、账款能收回仍需分别验证。</p>
+
+  <h3 id="cooperation-cash">6．分别算项目利润和原料方的真实投入</h3>
+  <p>一笔账看整个项目是否赚钱；另一笔账看原料方相比直接出售原料，新增收益是否值得增加资金占用和经营风险。自有原料也有成本和原本可出售的价值。若供料与生产属于同一合并测算范围，内部供料利润不能再重复加到项目利润上。</p>
+  <div class="formula">需要关注的投入：经营过程中，累计已经支付、尚未通过回款收回的资金最高达到多少。</div>
+  <p>年度原料采购总额不等于开工时一次性投入。备料、在制品、成品库存、客户账期、预付租金及其他经营支出都会影响垫资；供应商账期、客户预付款则可能改变资金需求。按实际收付时间编制现金流表，避免把库存金额和已支付的同一笔原料款重复相加。若投入的是家里已有库存，还需单列这批库存被占用的价值，不能因本期没有采购付款就视为零投入。</p>
+  <p class="small">目前租金、售价、工资等关键条件仍未知，保留计算器待填状态；40% 得率不代表行业统一标准，更不能直接作为本项目盈利依据。</p>
+
+  <h3 id="cooperation-pilot">7．先跑通有限批次，再决定长期合作</h3>
+  <div class="flow"><span>人员与设备到位</span><span>确认样品与买家条件</span><span>分批投料</span><span>核算分级产出</span><span>验收销售</span><span>收到货款</span></div>
+  <p>试运行前约定累计垫资上限，额度覆盖原料及其他未回收投入，不只限制单次送货。根据能够承受的风险和真实生产周期确定批次与期限，不套用未经验证的“行业标准”。</p>
+  <p>用实际批次核算得率、质量、成本、停机和回款时间。质量不达标、损耗无法解释、库存积压、回款逾期或触及资金上限时，按约定停止新增投料并处理已有货物。生产出绵球不等于试运行完成，还要验证买家验收和实际付款。</p>
+  <p>试运行通过后，再谈长期租期、稳定供料、人员报酬和投资权益；不宜在验证前一次投入全年原料，或大额预付长期租金。</p>
+
+  <h3 id="cooperation-terms">8．谈判时逐项填写的条件清单</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th scope="col">待谈事项</th><th scope="col">至少需要明确</th></tr></thead>
+    <tbody>
+      <tr><td>合作模式与主体</td><td>租线经营还是委托加工；谁签约、开票、雇工、销售和收款</td></tr>
+      <tr><td>场地设备费用</td><td>固定租金、按量收费或其他安排；押金、预付款、维修与停机责任</td></tr>
+      <tr><td>生产管理</td><td>具体负责人、到场安排、权限、报酬、考核及替换机制</td></tr>
+      <tr><td>原料与产品</td><td>投入身份、价格与结算、货权、重量口径、分级产出和损耗核验</td></tr>
+      <tr><td>技术与销售</td><td>技术支持责任；实际买家、规格、验收、价格、账期和销售报酬</td></tr>
+      <tr><td>费用与收益</td><td>工资、水电汽、环保等由谁承担；租金、服务费和分红分别对应什么</td></tr>
+      <tr><td>资金与异常</td><td>累计垫资上限、收付款控制、盘点查账、停料及恢复生产条件</td></tr>
+      <tr><td>退出与结算</td><td>未付款、停机或合作终止时，原料、在制品、成品、欠款和费用如何处理</td></tr>
+    </tbody>
+  </table></div>
+  <div class="notice"><strong>可用于沟通的表达：</strong>我们愿意用原料优势把项目做起来，但供料前要把现场谁管、产品谁买、款怎么收、损失怎么承担谈清楚。先用有限投入跑通实际回款，再根据真实数据决定扩大合作。</div>
+</section>
 <section class="calculator" id="factory-data" aria-labelledby="factory-title">
  <div class="eyebrow">2026年9月28日 · 本次工厂初筛数据</div>
  <h3 id="factory-title">从原料到绵球：先算清需要供多少料</h3>
- <p>本次对象是一家买入未精练原料、自行精练与制绵、将绵球对外销售的工厂。下方计算到绵球出厂为止。</p>
+ <p>据目前沟通，本次拟租用现有工厂的一条闲置线，由原料方供料，进行精练与制绵，绵球对外销售。下方计算到绵球出厂为止。<strong>此前300—400吨为你提供的工厂近一年实际产量范围，尚未确认对应整厂还是拟租生产线；不能直接作为这条闲置线的能力。</strong></p>
  <div class="results"><div class="metric"><span>你提供的近一年实际绵球产量</span><strong>300—400 吨</strong></div><div class="metric"><span>本次暂估的年绵球产销量</span><strong>350 吨</strong></div><div class="metric"><span>按40%出绵率反推的投料量</span><strong>875 吨原料</strong></div></div>
  <div class="table-wrap"><table><thead><tr><th>数据类别</th><th>目前采用的信息</th><th>使用边界</th></tr></thead><tbody>
- <tr><td>你提供的工厂情况</td><td>近一年实际生产300—400吨绵球，直接对外销售</td><td>尚未查验生产、销售台账；实际产量不等于已售数量或设备产能</td></tr>
+ <tr><td>你提供的工厂情况</td><td>近一年实际生产300—400吨绵球，直接对外销售</td><td>尚未查验台账，也未确认整厂与拟租线的对应关系；实际产量不等于已售数量或设备产能</td></tr>
  <tr><td>你提供的工艺范围</td><td>下茧、长吐、汰头等未精练原料；自行精练脱胶、洗涤、烘干与制绵</td><td>各种原料的配比、水分、含蛹情况仍待确认</td></tr>
- <tr><td>你们的参与方式</td><td>与他人共同投资，你们主要负责原料供应</td><td>供料结算价、垫资、持股与分红方式待明确</td></tr>
- <tr><td>暂估参数</td><td>年度绵球产销量350吨、综合出绵率40%</td><td>350吨取产量区间中值，暂按全部售出；40%是预算假设，不是行业平均或工厂实测</td></tr>
+ <tr><td>你们的参与方式</td><td>拟三方合作租用闲置线，你们主要负责原料供应</td><td>租金或加工费尚未谈清；供料身份、现场管理、采购承诺、垫资及分配待明确</td></tr>
+ <tr><td>暂估参数</td><td>年度绵球产销量350吨、综合出绵率40%</td><td>350吨取此前产量区间中值，暂按全部售出，不代表拟租线已验证产量；40%是预算假设，不是行业平均或工厂实测</td></tr>
  <tr><td>计算结果</td><td>350 ÷ 40% = 875吨原料</td><td>反推的是全年投入加工的原料量，不是已核实采购量或一次垫资需求</td></tr>
  <tr><td>财务数据待补</td><td>绵球售价、原料到厂价、加工费、副产品净收入、年度固定成本</td><td>默认留空；先算物料量，补齐后再算利润，空白不按0元处理</td></tr>
  </tbody></table></div>
@@ -45,10 +131,11 @@
 <section class="calculator" id="calculator">
  <h3>两种起点，同一笔绵球加工经营账</h3>
  <p>你们负责原料供应，先用原料模型看投料与产出；与其他合伙人讨论年产量时，再用绵球模型倒推供料需求。两套默认物料假设对应同一笔账：875吨原料 → 350吨绵球。</p>
- <p class="notice"><strong>只有产量范围与工艺边界来自你的说明；350吨、40%和875吨均为暂估或计算值。</strong>财务参数尚未获得，默认不显示盈利预测。填入数据后，按同一年度、不含增值税计算；假设投入原料当年加工完成，合格绵球全部售出、采购量等于投料量，不计库存变化。利润为工厂息税前经营结果，未计利息、所得税、营运资金变动和维持性资本开支。</p>
- <p class="small">绵球单价填各等级按销量加权的平均售价；原料单价填工厂取得原料的加权平均到厂成本。你们自身采购成本、向工厂的供料结算价、垫资和股权分红需分开核算，工厂利润不能直接当作你们的个人收益。</p>
+ <p class="notice"><strong>产量范围与工艺边界来自你的说明，但整厂与拟租线的对应关系待核实；350吨、40%和875吨均为暂估或计算值。</strong>财务参数尚未获得，默认不显示盈利预测。填入数据后，按同一年度、不含增值税计算；假设投入原料当年加工完成，合格绵球全部售出、采购量等于投料量，不计库存变化。利润为工厂息税前经营结果，未计利息、所得税、营运资金变动和维持性资本开支。</p>
+ <p class="small">绵球单价填各等级按销量加权的平均售价；原料单价填工厂取得原料的加权平均到厂成本。你们自身采购成本、向工厂的供料结算价、垫资和股权分红需分开核算，工厂利润不能直接当作你们的个人收益。<a href="#cooperation-cash">查看项目与家庭两笔账的区别</a>。</p>
  <p><a href="#raw-model">原料模型：从投料出发</a>　<a href="#product-model">绵球模型：从产量出发</a></p>
  <p class="small">两套输入独立调整；点击换算按钮才覆盖另一模型。财务待填项在换算时仍保持空白，确认没有某项收入或费用时才填0。页面中的修改只影响当前浏览器，不会更改公开网站。</p>
+ <p class="small">租线情景填费用时：固定租金、固定管理工资等计入年度固定成本，按产量结算的费用计入对应变动加工费；租入设备若已通过租金承担使用成本，不应再把出租方同一设备折旧重复加进本项目成本。押金、预付租金与初始改造款另列现金计划；本计算器不计算最高垫资额，也不代分三方收益。</p>
  <button class="print" type="button" onclick="window.print()">打印／保存PDF</button>
 </section>
 <section class="calculator" id="raw-model" aria-labelledby="raw-title">
@@ -74,7 +161,7 @@
 </section>
 <section class="calculator" id="product-model" aria-labelledby="product-title">
  <h3 id="product-title">模型二：从绵球产量出发</h3>
- <p>直接填写年度绵球产销量，倒推供料需求与单位成本。350吨取你提供的300—400吨实际产量范围中值，暂按全部售出；不是设备设计产能。</p>
+ <p>直接填写年度绵球产销量，倒推供料需求与单位成本。350吨取你提供的工厂300—400吨实际产量范围中值，暂按全部售出；不是拟租线的已验证产量或设备设计产能。</p>
  <div class="fields"><label>年度绵球产销量（吨）<input id="output" type="number" value="350" min="0"  step="any" required></label>
 <label>综合出绵率：绵球÷原料（%）<input id="yield" type="number" value="40" min="0.000001" max="100" step="any" required></label>
 <label>原料不含税到厂价（元/公斤原料）<input id="raw" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
@@ -95,16 +182,16 @@
 </section>
 <section class="calculator" id="raw-discussion">
  <h3>接下来补齐：原料与合作方式</h3>
- <p>已明确原料类别、厂内精练制绵、绵球外卖及近一年产量范围。后续按下面几项补充，不要求一次准备齐全。</p>
+ <p>已明确原料类别、厂内精练制绵、绵球外卖，并新增了三方租用闲置线的合作设想。收费方式尚未谈清，现场技术管理与采购安排仍待落实；原有产量范围与拟租线的关系待查。先用<a href="#cooperation-terms">三方待谈条件清单</a>对齐，再补下面的生产与财务数据。</p>
  <ul><li>原料配比与状态：各类数量、是否带蛹、含水、等级、桑蚕或柞蚕及批次稳定性。</li><li>实际投料与出绵：全年或同批次的投料、各等级绵球、落绵和其他副产品重量。</li><li>采购与销售：原料到厂单价、各级绵球销量与单价、税运、库存及账期。</li><li>加工费用：药剂、水电汽、人工、烘干、污水处理、制绵、包装与固定费用的划分。</li><li>怎样供料：直接销售、赊供、委托加工还是作价出资，定价与副产品归属如何约定。</li><li>怎样合资：投资金额、持股比例、垫资期限、货款风险与分红安排。</li></ul>
  <p class="small">先分清“你们供料赚多少钱”和“工厂加工赚多少钱”，避免把内部结算重复计作项目收益。</p>
 </section>
 <div id="report">
 
-<p>调研截止：2026年9月27日｜对象：无行业经验、考虑新建或收购工厂的家庭投资者</p>
+<p>调研截止：2026年9月27日｜对象：以原料供应为主要优势、正在评估租线合作的家庭；兼顾新建与收购的行业背景</p>
 <p><strong>阅读说明</strong></p>
 <p>这份报告把三类内容分开：带来源的行业事实；根据工艺和经营逻辑提出的调查建议；仅用于理解风险的假设测算。行业统计各有截止期，2026年全年数据尚不存在。本次未取得某一目标工厂的账簿、合同、许可证、真实试纺数据或设备正式报价，因此不能据此给出具体工厂的估值、必需投资额或承诺回本年限。</p>
-<p><strong>本次项目阅读口径：</strong>已按2026年9月28日提供的信息明确为自行精练制绵、出售绵球的工厂。先看上方工厂数据与双模型；下文保留完整产业链背景，其中纺纱、绢丝规格与相关市场数据用于理解下游，不能直接代替本厂绵球的售价、需求或成本。现场考察可使用16、17的清单。</p>
+<p><strong>本次项目阅读口径：</strong>已按2026年9月28日提供的信息明确为自行精练制绵、出售绵球的工厂。先看上方三方租线合作专题、工厂数据与双模型；下文保留完整产业链背景，其中纺纱、绢丝规格与相关市场数据用于理解下游，不能直接代替本厂绵球的售价、需求或成本。现场考察可使用16、17的清单。</p>
 <h2 id="s01">01｜先说投资判断：一家绢纺厂究竟靠什么赚钱</h2>
 <p>绢纺是把适宜纺纱的蚕丝纤维整理、梳理、牵伸、加捻，制成绢丝或混纺纱的制造业。它有真实的服装、针织和面料客户，但投资成败取决于具体产品、原料、工艺、订单与现金流。不能仅凭“天然真丝”“国家支持传统产业”“附近养蚕多”来判断值得建厂。</p>
 <p>对新进入者，我建议的验证顺序是：确定客户和规格 → 采购代表性原料并试纺 → 算清合格产品成本 → 核实厂址和合规条件 → 比较新建与收购 → 确认资金可覆盖投产爬坡与回款周期。这是本报告的经营建议，并非强制性行业程序。</p>
@@ -117,7 +204,7 @@
 <li>钱何时回来：验收与账期如何约定？库存和应收款会占用多少资金？</li>
 <li>能否合法持续开工：设备、工艺、场地、污水去向和许可是否匹配？</li>
 </ul>
-<p>你们目前已明确共同投资、主要负责原料供应；所谈工厂自行精练脱胶与制绵，绵球直接外卖，近一年实际产量约300—400吨。地点、预算、交易方式、原料配比、真实财务与技术团队仍待核实。</p>
+<p>你们目前讨论的是三方合作租用闲置生产线，主要由你们供原料，工厂自行精练制绵、绵球直接外卖。场地设备方拟提供负责人，技术销售方有经营经验与渠道，但驻厂技术管理、采购承诺、收费与资金分担尚未落实。此前工厂实际产量约300—400吨与拟租线的关系仍待查。<a href="#cooperation-plan">查看本次合作分析</a>。</p>
 <h2 id="s02">02｜先认清几个容易混淆的概念</h2>
 <div class="table-wrap"><table>
 <thead>
@@ -442,6 +529,7 @@
 </ol>
 <p>靠近蚕区不必然最优，靠近客户也不必然最优。应把每公斤合格产品的综合成本和服务能力放在同一张表里比较。地方补贴在收到正式文件、确认条件前，不宜计入基础盈利情景。</p>
 <h2 id="s10">10｜三种工厂边界，以及新建与收购的区别</h2>
+<p class="notice">本次具体方案已转为租用现有闲置线。租线需要另外明确谁组织生产、雇工、承担维修和水电汽，以及经营与许可条件是否匹配；不能直接套用收购预算，也不能把自行租线经营与委托加工混为一谈。<a href="#cooperation-roles">查看两种模式的责任边界</a>。下表保留新建与收购的背景比较。</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -511,7 +599,7 @@
 <p>第一笔是购地/租厂、工程与设备；第二笔是配电、消防、温湿度、环保等配套；第三笔是试产、认证、培训、初期损耗等启动费用；第四笔是持续采购、在制品、库存与应收款需要的流动资金。另需考虑融资费用、税费和应急储备。</p>
 <p>**一个可核验但不能外推的旧项目案例。**浙江圣环2018年《年产600吨高品味绢丝建设项目》规划投资1.5亿元，厂房40700平方米。但600吨由250吨蚕丝纤维条、250吨长纤绢丝和100吨短纤绢丝组成，即成品绢丝350吨；项目外购纤维、不含上游精练。这些是当年环评规划值，不能作为2026设备报价、实际投产结果或行业单位产能投资标准。<a href="https://www.zjshjkj.com/uploadfile/upfiles/201809290939275baed7cfcc686.pdf">环评原件</a></p>
 <p>设备报价应拆成：主机、配套、安装、运输、税、调试、备件、检验、培训、验收、改造及质保；至少获取可在同一条件下比较的多份方案。项目资金计划要落实每笔款的支付时间，而不只是一张总投资表。</p>
-<p><strong>本次绵球工厂的物料与资金测算。</strong>你提供的年实际绵球产量为300—400吨；主情景取350吨、综合出绵率暂设40%，对应全年投料875吨。这些是已说明边界的暂估数据，不是已核实生产台账或行业均值。<a href="#factory-data">查看完整数据表</a>。</p>
+<p><strong>本次绵球工厂的物料与资金测算。</strong>你提供的年实际绵球产量为300—400吨；主情景取350吨、综合出绵率暂设40%，对应全年投料875吨。产量范围由你提供，350吨、40%及875吨属于暂估或推算；尚未核实拟租线的能力，不是生产台账或行业均值。<a href="#factory-data">查看完整数据表</a>。</p>
 <p>按原料计算：每公斤原料贡献＝绵球平均售价×综合出绵率－原料到厂价－每公斤原料变动加工费＋每公斤原料副产品净回收额；全年息税前经营结果＝每公斤原料贡献×年度投料公斤数－年度固定成本。</p>
 <p>按绵球计算：每公斤绵球贡献＝绵球平均售价－原料到厂价÷综合出绵率－每公斤绵球变动加工费＋每公斤绵球副产品净回收额；全年息税前经营结果＝每公斤绵球贡献×年度绵球产销公斤数－年度固定成本。</p>
 <p>相同经营条件换算后，两套结果应一致。加工费和副产品回收额必须随计量单位换算，落绵不得既算入绵球得率又重复计收入。当前价格与费用未获得，<strong>不输出预计利润或回本年限</strong>；上方计算器允许补齐后再测算。</p>
@@ -647,7 +735,7 @@
 <p>**丝蛋白、生物医用等新材料。**这类项目涉及不同技术、验证和市场准入。拥有绢纺设备不代表已经具备生产、销售高附加值生物材料的能力。可作为另一个项目研究，不能用来填补普通纺纱业务的利润缺口。</p>
 <p>**外贸变化。**出口数量增长同时伴随综合均价下降，提示必须按产品、客户和市场分析。海外纺织供应链变动既可能带来纱线订单，也可能加大比价压力，不能只看出口增长标题。</p>
 <h2 id="s15">15｜给你们家的进入策略：把资金分阶段投入</h2>
-<p>在目前缺少预算、厂址、客户和技术团队信息的条件下，本报告更倾向于：先通过有经验团队和真实订单验证产品，再决定以收购还是新建承接产能。</p>
+<p>本次已经有拟租场地与三方合作设想，下一步应先落实现场负责人、租线条件与真实采购安排，以受限批次验证绵球质量、成本和实际回款，再决定是否长期租线及如何投资分配。<a href="#cooperation-pilot">查看本次试运行步骤</a>。</p>
 <p>一个建议性的分阶段安排如下。时间仅供组织工作，取决于工厂配合、试样和审批，不是建厂工期承诺。</p>
 <div class="table-wrap"><table>
 <thead>
@@ -668,13 +756,13 @@
 <td>可比较的规格、需求、报价与资料</td>
 </tr>
 <tr>
-<td>第5—8周：试纺与交叉核验</td>
-<td>多批次试纺、客户试用，抽查账务、库存、许可</td>
+<td>第5—8周：试制与交叉核验</td>
+<td>代表性原料试制绵球、客户验收与回款，抽查账务、库存、许可</td>
 <td>合格率、净得率、实际接受价格和风险清单</td>
 </tr>
 <tr>
 <td>第9—12周：做决策材料</td>
-<td>新建/收购全成本比较、压力测试、交易条件</td>
+<td>租线经营或委托加工的全成本比较、压力测试、合作条件</td>
 <td>经独立复核的项目财务与实施方案</td>
 </tr>
 <tr>
@@ -687,7 +775,7 @@
 <ul>
 <li>至少有明确产品和可验证的客户需求，而不是“先建起来再找订单”。</li>
 <li>关键工艺由能独立评估的人复核，不能只听设备卖方或股权卖方。</li>
-<li>代表性原料的多批次试纺结果可以重复，客户能接受。</li>
+<li>代表性原料的多批次试制结果可以重复，绵球客户能验收并按约付款。</li>
 <li>无补贴、保守价格与开工率下仍有可解释的经济性。</li>
 <li>流动资金在投产爬坡和延迟回款情景下有来源。</li>
 <li>场地、设备、湿处理和许可没有尚未解释的重大矛盾。</li>
