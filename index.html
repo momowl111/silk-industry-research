@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>中国绢纺行业调查｜2026.09.27</title>
+<title>绢纺行业调查与绵球工厂测算｜2026.09.28</title>
 <style>
 :root{--ink:#183731;--muted:#5e706a;--paper:#f6f4ed;--line:#d9e0d9;--accent:#986c29;--red:#ac3e35}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:16px;line-height:1.85}a{color:#126d5d;text-underline-offset:3px}header{background:#183731;color:#fff;padding:54px max(6vw,24px)}header .eyebrow{color:#b9d6c8;letter-spacing:2px;font-size:13px}h1{font-family:"Microsoft YaHei",sans-serif;font-size:clamp(28px,4vw,46px);margin:14px 0;line-height:1.4;font-weight:600}header p{max-width:900px;color:#e0eae3}header .meta{font-size:14px;color:#c1d0c5}main{max-width:1440px;margin:0 auto;padding:32px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:40px}nav{position:sticky;top:24px;align-self:start;max-height:92vh;overflow:auto;font-size:13px}nav a{display:block;text-decoration:none;padding:7px 10px;border-left:2px solid transparent}nav a:hover{border-color:var(--accent);background:#e9ede5}nav b{display:block;padding:8px 10px;color:var(--muted)}article{min-width:0}.intro,.calculator{background:white;border:1px solid var(--line);border-radius:12px;padding:28px;margin:0 0 30px}.flow{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.flow span{background:#edf3ed;padding:8px 13px;border-radius:5px;font-size:14px}.flow span:not(:last-child)::after{content:" →";color:#7b8d80;margin-left:8px}h2{font-size:25px;margin:52px 0 20px;padding-top:16px;border-top:2px solid var(--line);scroll-margin-top:20px}h3{font-size:21px;margin:0 0 10px}.notice{padding:12px 16px;background:#fff5df;border-left:4px solid #bf9850;font-size:14px}.small{font-size:13px;color:var(--muted)}p{margin:14px 0}li{margin:6px 0}.table-wrap{overflow-x:auto;margin:22px 0}table{width:100%;border-collapse:collapse;font-size:14px;background:white}th,td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}th{background:#e8efe7;font-weight:600}tr:nth-child(even) td{background:#fbfcf9}.fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:22px 0}label{display:block;font-size:13px;color:var(--muted)}input{display:block;width:100%;font-size:18px;margin-top:6px;padding:9px 10px;border:1px solid #aebeb3;border-radius:5px;color:var(--ink);background:#fff}input:focus{outline:2px solid #478b73;outline-offset:2px}button{padding:9px 18px;border:1px solid #b2beb3;border-radius:5px;cursor:pointer;background:#ecf2eb;color:var(--ink);font-size:14px}.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}.metric{border:1px solid var(--line);border-radius:7px;padding:15px;background:#f8faf6}.metric span{display:block;font-size:13px;color:var(--muted)}.metric strong{display:block;font-size:25px;margin-top:6px}.negative{color:var(--red)}.positive{color:#19765b}.error{color:var(--red)}.bar{height:9px;background:#ebeee8;border-radius:5px;overflow:hidden;margin-top:9px}.bar>i{display:block;height:100%;background:#2e8067;max-width:100%}.foot{border-top:1px solid var(--line);padding:24px;color:var(--muted);font-size:13px}.print{float:right}strong{font-weight:650}
@@ -9,88 +9,115 @@
 @media print{body{background:white;font-size:10pt;line-height:1.6}header{background:white;color:#183731;padding:0;border-bottom:2px solid #183731}header p,header .meta,header .eyebrow{color:#183731}h1{font-size:25pt}main{display:block;padding:0}nav,.print,button{display:none}.calculator{break-before:page}.fields{grid-template-columns:repeat(4,1fr)}.table-wrap{overflow:visible}table{font-size:9pt;min-width:0}th,td{padding:7px}h2{break-after:avoid;font-size:17pt}tr{break-inside:avoid}a{color:inherit}input{border:none;padding:0;font-size:12pt}}
 
 .model-actions{display:flex;gap:12px;flex-wrap:wrap}.calculator .print{float:none}.calculator{scroll-margin-top:20px}.formula{padding:14px 16px;background:#f1f5ef;border-left:3px solid #2e8067;font-size:14px;overflow-wrap:anywhere}.calculation-detail{margin:18px 0}.calculation-detail summary{cursor:pointer;font-weight:600;color:#126d5d}.calculation-detail .table-wrap{margin:12px 0}.calculator button:disabled{opacity:.5;cursor:not-allowed}.calculator input{min-width:0}.calculator [hidden]{display:none!important}.calculator .fields label{color:#304f45}.calculator .metric strong{overflow-wrap:anywhere}@media(max-width:760px){.calculator .fields{grid-template-columns:1fr}}@media print{.model-actions{display:none}.calculator{break-before:auto;break-inside:auto}.calculator h3{break-after:avoid}}
+.pending{color:var(--muted)}.base-case td{background:#e5f2e8!important}.calculator .eyebrow{font-size:13px;color:var(--muted)}#yield-scenarios{scroll-margin-top:20px}#factory-data h3:not(:first-of-type){margin-top:30px}
 </style></head><body>
-<header><div class="eyebrow">产业研究 · 家庭投资决策参考</div><h1>中国国内绢纺行业调查</h1><p>从一根蚕丝到一座工厂：生产流程、最新市场、设备与团队、建厂合规、收购尽调和现金流。</p><div class="meta">调研截至 2026年9月27日 · 聚焦新建与收购 · 18个主题</div></header>
-<main><nav id="toc" aria-label="报告目录"><b>阅读导航</b><a href="#raw-model">原料模型：供料投入与产出</a><a href="#product-model">成品模型：产量与利润</a><a href="#raw-discussion">下次沟通：原料与合作方式</a></nav><article>
-<section class="intro"><strong>先验证六件事，再决定投入规模</strong><div class="flow"><span>客户与规格</span><span>原料与试纺</span><span>合格产品成本</span><span>场地与合规</span><span>新建或收购</span><span>现金与回款</span></div><p class="small">正文中的数据均附来源。企业案例不代表行业平均水平；建议与假设测算已单独标明。</p></section>
+<header><div class="eyebrow">产业研究 · 家庭投资决策参考</div><h1>中国国内绢纺行业调查</h1><p>从一根蚕丝到一座工厂：生产流程、最新市场、设备与团队、建厂合规、收购尽调和现金流。</p><div class="meta">行业资料截至2026年9月27日 · 绵球工厂测算更新于2026年9月28日 · 18个主题</div></header>
+<main><nav id="toc" aria-label="报告目录"><b>阅读导航</b><a href="#factory-data">本次工厂：已知情况与暂估数据</a><a href="#yield-scenarios">出绵率与供料量对照</a><a href="#raw-model">原料模型：供料投入与产出</a><a href="#product-model">绵球模型：产量与利润</a><a href="#raw-discussion">待补：原料与合作方式</a></nav><article>
+<section class="intro"><strong>先验证六件事，再决定投入规模</strong><div class="flow"><span>客户与规格</span><span>原料与试制</span><span>合格产品成本</span><span>场地与合规</span><span>新建或收购</span><span>现金与回款</span></div><p class="small">正文中的数据均附来源。企业案例不代表行业平均水平；建议与假设测算已单独标明。</p></section>
 
+<section class="calculator" id="factory-data" aria-labelledby="factory-title">
+ <div class="eyebrow">2026年9月28日 · 本次工厂初筛数据</div>
+ <h3 id="factory-title">从原料到绵球：先算清需要供多少料</h3>
+ <p>本次对象是一家买入未精练原料、自行精练与制绵、将绵球对外销售的工厂。下方计算到绵球出厂为止。</p>
+ <div class="results"><div class="metric"><span>你提供的近一年实际绵球产量</span><strong>300—400 吨</strong></div><div class="metric"><span>本次暂估的年绵球产销量</span><strong>350 吨</strong></div><div class="metric"><span>按40%出绵率反推的投料量</span><strong>875 吨原料</strong></div></div>
+ <div class="table-wrap"><table><thead><tr><th>数据类别</th><th>目前采用的信息</th><th>使用边界</th></tr></thead><tbody>
+ <tr><td>你提供的工厂情况</td><td>近一年实际生产300—400吨绵球，直接对外销售</td><td>尚未查验生产、销售台账；实际产量不等于已售数量或设备产能</td></tr>
+ <tr><td>你提供的工艺范围</td><td>下茧、长吐、汰头等未精练原料；自行精练脱胶、洗涤、烘干与制绵</td><td>各种原料的配比、水分、含蛹情况仍待确认</td></tr>
+ <tr><td>你们的参与方式</td><td>与他人共同投资，你们主要负责原料供应</td><td>供料结算价、垫资、持股与分红方式待明确</td></tr>
+ <tr><td>暂估参数</td><td>年度绵球产销量350吨、综合出绵率40%</td><td>350吨取产量区间中值，暂按全部售出；40%是预算假设，不是行业平均或工厂实测</td></tr>
+ <tr><td>计算结果</td><td>350 ÷ 40% = 875吨原料</td><td>反推的是全年投入加工的原料量，不是已核实采购量或一次垫资需求</td></tr>
+ <tr><td>财务数据待补</td><td>绵球售价、原料到厂价、加工费、副产品净收入、年度固定成本</td><td>默认留空；先算物料量，补齐后再算利润，空白不按0元处理</td></tr>
+ </tbody></table></div>
+ <div class="flow" aria-label="本次工厂的生产范围"><span>未精练原料</span><span>精练脱胶</span><span>洗涤与烘干</span><span>精干绵</span><span>梳理制绵</span><span>绵球对外销售</span></div>
+ <p class="small">后续纺纱、制成绢丝属于下游环节。本厂加工费需覆盖实际承担的水电汽、药剂、洗涤烘干、污水处理、制绵与包装；固定工资和折旧等与年度固定成本划分，避免重复计费。</p>
+ <h3 id="yield-scenarios">不同出绵率，需要供多少原料？</h3>
+ <p>按年度绵球产量300、350、400吨分别倒推。综合出绵率＝合格绵球重量÷投入原料重量，落绵等副产品另算，不重复计入绵球产量。</p>
+ <div class="table-wrap"><table id="yield-table"><thead><tr><th>出绵率情景</th><th>300吨绵球需原料</th><th>350吨绵球需原料</th><th>400吨绵球需原料</th></tr></thead><tbody>
+ <tr><td>20%：更低得率情景</td><td>1,500吨</td><td>1,750吨</td><td>2,000吨</td></tr>
+ <tr><td>30%：较低情景</td><td>1,000吨</td><td>约1,166.67吨</td><td>约1,333.33吨</td></tr>
+ <tr class="base-case"><td><strong>40%：暂用主情景</strong></td><td><strong>750吨</strong></td><td><strong>875吨</strong></td><td><strong>1,000吨</strong></td></tr>
+ <tr><td>50%：较高情景</td><td>600吨</td><td>700吨</td><td>800吨</td></tr>
+ </tbody></table></div>
+ <p class="notice"><strong>这四档是测算情景，不是行业统计区间、质量合格线或得率上下限。</strong>40%暂按长吐、汰头等未精练纤维原料为主的条件讨论；实际配比尚未确定。带蛹整茧占比较高时，40%可能偏高，应检验20%甚至更低的情景。比较时必须统一采购阶段、水分与称重口径。</p>
+ <p class="formula">本次主情景：350吨绵球 ÷ 40% = 875吨原料。按采购量等于投料量估算，全年原料金额 = 875,000公斤 × 每公斤原料到厂价；这不是一次性出资额。</p>
+ <details class="calculation-detail"><summary>查看得率假设的依据与限制</summary><p>本次未找到可以直接套用于这家厂的现行统一综合出绵率标准。历史原始技术资料分别讨论精练得率与后续制绵得率，说明两段重量变化必须区分。<a href="https://patents.google.com/patent/CN104611771B/zh">CN104611771B精练资料（2016年公开授权文本）</a>的申请人数据随原料而异，且部分数字口径不一致；<a href="https://patents.google.com/patent/CN1247243A/zh">CN1247243A制绵资料（2000年公开）</a>给出的是当时精干绵到绵条/绵片的背景工艺数据。这些旧资料不能证明当前工厂的综合得率，也不能直接相乘得到工厂承诺产量。40%及对照情景均为本次预算假设；取得同批原料试制或生产台账后应替换。</p></details>
+</section>
 <section class="calculator" id="calculator">
- <h3>两种起点，同一笔工厂经营账</h3>
- <p>你们主要负责原料供应，可以先用原料模型估算投料、原料款与产出；与其他合伙人讨论产品和产能时，再用成品模型核对。</p>
- <p class="notice"><strong>所有默认数值均为教学假设，不是市场报价或项目预测。</strong>两套模型按同一年度、不含增值税计算，采购量按实际投料量估算，不含期初期末库存变化；投入的原料当年完成加工，合格成品全部售出。结果为工厂息税前经营利润，未计利息、所得税、营运资金变动和维持性资本开支。</p>
- <p class="small">本页原料价格按<strong>工厂取得原料的到厂成本</strong>填写。你们自身采购成本、向工厂供料的结算价、供料利润、垫资和股权分红，要等合作方式明确后分别测算。工厂利润不能直接当作你们的个人收益。</p>
- <p><a href="#raw-model">原料模型：从投料与采购金额出发</a>　<a href="#product-model">成品模型：从目标产量出发</a></p>
- <p class="small">两套输入独立调整，不会自动互相覆盖。需要对账时，点击“换算到另一模型”；按钮会更新对方的输入。</p>
+ <h3>两种起点，同一笔绵球加工经营账</h3>
+ <p>你们负责原料供应，先用原料模型看投料与产出；与其他合伙人讨论年产量时，再用绵球模型倒推供料需求。两套默认物料假设对应同一笔账：875吨原料 → 350吨绵球。</p>
+ <p class="notice"><strong>只有产量范围与工艺边界来自你的说明；350吨、40%和875吨均为暂估或计算值。</strong>财务参数尚未获得，默认不显示盈利预测。填入数据后，按同一年度、不含增值税计算；假设投入原料当年加工完成，合格绵球全部售出、采购量等于投料量，不计库存变化。利润为工厂息税前经营结果，未计利息、所得税、营运资金变动和维持性资本开支。</p>
+ <p class="small">绵球单价填各等级按销量加权的平均售价；原料单价填工厂取得原料的加权平均到厂成本。你们自身采购成本、向工厂的供料结算价、垫资和股权分红需分开核算，工厂利润不能直接当作你们的个人收益。</p>
+ <p><a href="#raw-model">原料模型：从投料出发</a>　<a href="#product-model">绵球模型：从产量出发</a></p>
+ <p class="small">两套输入独立调整；点击换算按钮才覆盖另一模型。财务待填项在换算时仍保持空白，确认没有某项收入或费用时才填0。页面中的修改只影响当前浏览器，不会更改公开网站。</p>
  <button class="print" type="button" onclick="window.print()">打印／保存PDF</button>
 </section>
 <section class="calculator" id="raw-model" aria-labelledby="raw-title">
  <h3 id="raw-title">模型一：从原料投入出发</h3>
- <p>先填一年<strong>实际投入加工的原料量</strong>，再看需要多少原料款、能产出多少合格成品，以及工厂预计赚多少。</p>
- <div class="fields"><label>年度实际投料量（吨原料）<input id="r-quantity" type="number" value="833.333333333" min="0"  step="any" required></label>
-<label>原料到厂成本（元/公斤原料）<input id="r-raw" type="number" value="150" min="0"  step="any" required></label>
-<label>净得率：成品重量÷原料重量（%）<input id="r-yield" type="number" value="60" min="0.000001" max="100" step="any" required></label>
-<label>成品不含税售价（元/公斤合格成品）<input id="r-price" type="number" value="300" min="0"  step="any" required></label>
-<label>其他变动加工费（元/公斤原料）<input id="r-variable" type="number" value="12" min="0"  step="any" required></label>
-<label>副产品净回收额（元/公斤原料）<input id="r-credit" type="number" value="6" min="0"  step="any" required></label>
-<label>年度固定成本含折旧（万元）<input id="r-fixed" type="number" value="1500" min="0"  step="any" required></label></div>
- <p class="small">本模型加工费、副产品净回收额均按<strong>每公斤原料</strong>填写。默认12元、6元，分别由成品模型的20元、10元乘60%得率换算而来。净得率需统一水分、重量与采购阶段；副产品回收额已扣其相关费用。</p>
- <div class="model-actions"><button id="r-reset" type="button">恢复原料模型教学假设</button><button id="r-copy" type="button">换算到成品模型并覆盖其输入</button></div>
+ <p>先填年度投入加工的原料量，估算能生产多少绵球；补充单价与费用后，再看原料金额和经营结果。默认875吨是反推暂估值。</p>
+ <div class="fields"><label>年度原料投料量（吨）<input id="r-quantity" type="number" value="875" min="0"  step="any" required></label>
+<label>综合出绵率：绵球÷原料（%）<input id="r-yield" type="number" value="40" min="0.000001" max="100" step="any" required></label>
+<label>原料不含税到厂价（元/公斤原料）<input id="r-raw" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
+<label>绵球不含税均价（元/公斤绵球）<input id="r-price" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
+<label>变动加工费（元/公斤原料）<input id="r-variable" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
+<label>副产品净回收额（元/公斤原料）<input id="r-credit" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
+<label>年度固定成本含折旧（万元）<input id="r-fixed" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label></div>
+ <p class="small">本模型加工费、副产品净回收额均按<strong>每公斤原料</strong>填写；副产品回收额已扣其相关费用。40%包括从进厂原料到合格绵球的各段重量变化，不应再次扣同一段损耗。</p>
+ <div class="model-actions"><button id="r-reset" type="button">恢复本次暂估（清空金额）</button><button id="r-copy" type="button">换算到绵球模型并覆盖其输入</button></div>
  <p id="r-status" class="small" role="status"></p><p id="r-error" class="error" role="alert"></p>
  <div id="r-outputs" aria-live="polite">
-  <div class="results"><div class="metric"><span>预计年度原料款（采购量＝投料量）</span><strong id="r-purchase"></strong></div><div class="metric"><span>预计合格成品产销量</span><strong id="r-output"></strong></div><div class="metric"><span>年度息税前经营结果</span><strong id="r-profit"></strong></div></div>
-  <p id="r-formula" class="formula"></p><p id="r-breakeven"></p>
-  <details class="calculation-detail" open><summary>展开核对全年收入与成本</summary><div class="table-wrap"><table><thead><tr><th>项目</th><th>计算过程</th><th>金额（万元）</th></tr></thead><tbody id="r-ledger"></tbody></table></div></details><details class="calculation-detail"><summary>查看单因素压力测试</summary><div class="table-wrap"><table><thead><tr><th>单因素变化（其他输入不变）</th><th>年度息税前经营结果</th></tr></thead><tbody id="r-scenarios"></tbody></table></div></details>
-  <p class="small">原料模型的压力测试保持投料量不变（投料减少情景除外），并保持每公斤原料的加工费和副产品回收假设不变。得率下降时，成品产量随之减少。</p>
+  <div class="results"><div class="metric"><span>预计全年原料金额（采购量＝投料量）</span><strong id="r-purchase"></strong></div><div class="metric"><span>预计合格绵球产销量</span><strong id="r-output"></strong></div><div class="metric"><span>年度息税前经营结果</span><strong id="r-profit"></strong></div></div>
+  <p id="r-missing" class="small"></p><p id="r-formula" class="formula"></p><p id="r-breakeven"></p>
+  <details class="calculation-detail" open><summary>核对全年收入与成本</summary><div class="table-wrap"><table><thead><tr><th>项目</th><th>计算过程</th><th>金额（万元）</th></tr></thead><tbody id="r-ledger"></tbody></table></div></details><details class="calculation-detail" id="r-stress" hidden><summary>查看利润压力测试</summary><div class="table-wrap"><table><thead><tr><th>单因素变化（其他输入不变）</th><th>年度息税前经营结果</th></tr></thead><tbody id="r-scenarios"></tbody></table></div></details>
+  <p class="small">利润压力测试保持投料量不变（投料减少情景除外），并保持每公斤原料加工费及副产品回收额不变；出绵率下降时，绵球产量减少。计算使用未舍入值。</p>
  </div>
- <p class="notice">这里按全部投料在本年等量采购估算原料成本，<strong>不代表当年实际付款、一次性出资额或最高垫资额</strong>。实际资金需求还取决于分批供料、库存、付款和回款时间。未投入生产的原料仍是库存；本模型暂不测算库存和账期。</p>
+ <p class="notice">全年原料金额<strong>不代表当年实际付款、一次性出资额或最高垫资额</strong>。实际资金需求取决于分批供料、库存、付款与回款时间；本模型暂不测算库存和账期。</p>
 </section>
 <section class="calculator" id="product-model" aria-labelledby="product-title">
- <h3 id="product-title">模型二：从合格成品产量出发</h3>
- <p>先看工厂计划生产并售出多少合格绢丝，再倒推需要多少原料、每公斤成品的成本与经营结果。</p>
- <div class="fields"><label>有效年产能（吨合格成品）<input id="capacity" type="number" value="500" min="0"  step="any" required></label>
-<label>产销水平（占成品产能%）<input id="util" type="number" value="100" min="0" max="100" step="any" required></label>
-<label>成品不含税售价（元/公斤合格成品）<input id="price" type="number" value="300" min="0"  step="any" required></label>
-<label>原料到厂成本（元/公斤原料）<input id="raw" type="number" value="150" min="0"  step="any" required></label>
-<label>净得率：成品重量÷原料重量（%）<input id="yield" type="number" value="60" min="0.000001" max="100" step="any" required></label>
-<label>副产品净回收额（元/公斤合格成品）<input id="credit" type="number" value="10" min="0"  step="any" required></label>
-<label>其他变动加工费（元/公斤合格成品）<input id="variable" type="number" value="20" min="0"  step="any" required></label>
-<label>年度固定成本含折旧（万元）<input id="fixed" type="number" value="1500" min="0"  step="any" required></label></div>
- <p class="small">本模型加工费、副产品净回收额均按<strong>每公斤合格成品</strong>填写。产能也是合格成品重量。房租、固定月薪、折旧等放入年度固定成本，不要在变动加工费中重复计算。</p>
- <div class="model-actions"><button id="reset" type="button">恢复成品模型教学假设</button><button id="copy-to-raw" type="button">换算到原料模型并覆盖其输入</button></div>
- <p id="p-status" class="small" role="status"></p><p class="error" id="error" role="alert"></p>
+ <h3 id="product-title">模型二：从绵球产量出发</h3>
+ <p>直接填写年度绵球产销量，倒推供料需求与单位成本。350吨取你提供的300—400吨实际产量范围中值，暂按全部售出；不是设备设计产能。</p>
+ <div class="fields"><label>年度绵球产销量（吨）<input id="output" type="number" value="350" min="0"  step="any" required></label>
+<label>综合出绵率：绵球÷原料（%）<input id="yield" type="number" value="40" min="0.000001" max="100" step="any" required></label>
+<label>原料不含税到厂价（元/公斤原料）<input id="raw" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
+<label>绵球不含税均价（元/公斤绵球）<input id="price" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
+<label>变动加工费（元/公斤绵球）<input id="variable" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
+<label>副产品净回收额（元/公斤绵球）<input id="credit" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label>
+<label>年度固定成本含折旧（万元）<input id="fixed" type="number" value="" min="0"  step="any" placeholder="待填；确认没有则填0"></label></div>
+ <p class="small">本模型加工费、副产品净回收额均按<strong>每公斤合格绵球</strong>填写，与原料模型的单位不同；可用换算按钮对账。加工费用止于绵球出厂，不包含下游纺成绢丝的费用。</p>
+ <div class="model-actions"><button id="reset" type="button">恢复本次暂估（清空金额）</button><button id="copy-to-raw" type="button">换算到原料模型并覆盖其输入</button></div>
+ <p id="p-status" class="small" role="status"></p><p id="error" class="error" role="alert"></p>
  <div id="outputs" aria-live="polite">
-  <div class="results"><div class="metric"><span>净变动成本（元/公斤合格成品）</span><strong id="cost"></strong></div><div class="metric"><span>扣固定成本前贡献（元/公斤合格成品）</span><strong id="contribution"></strong></div><div class="metric"><span>年度息税前经营结果</span><strong id="profit"></strong></div></div>
-  <p id="p-quantities"></p><p id="p-formula" class="formula"></p><p id="breakeven"></p>
-  <details class="calculation-detail" open><summary>展开核对全年收入与成本</summary><div class="table-wrap"><table><thead><tr><th>项目</th><th>计算过程</th><th>金额（万元）</th></tr></thead><tbody id="p-ledger"></tbody></table></div></details><details class="calculation-detail"><summary>查看单因素压力测试</summary><div class="table-wrap"><table><thead><tr><th>单因素变化（其他输入不变）</th><th>年度息税前经营结果</th></tr></thead><tbody id="scenarios"></tbody></table></div></details>
-  <p class="small">成品模型的压力测试保持成品产销量不变（产销减少情景除外），并保持每公斤成品的加工费和副产品回收假设不变。得率下降时，需要增加原料投入。因此它与原料模型的压力测试不是同一组条件。</p>
+  <div class="results"><div class="metric"><span>所需年度原料投料量</span><strong id="p-raw-needed"></strong></div><div class="metric"><span>每公斤绵球净变动成本（已抵副产品）</span><strong id="cost"></strong></div><div class="metric"><span>年度息税前经营结果</span><strong id="profit"></strong></div></div>
+  <p id="p-missing" class="small"></p><p id="p-quantities"></p><p id="p-formula" class="formula"></p><p id="breakeven"></p>
+  <details class="calculation-detail" open><summary>核对全年收入与成本</summary><div class="table-wrap"><table><thead><tr><th>项目</th><th>计算过程</th><th>金额（万元）</th></tr></thead><tbody id="p-ledger"></tbody></table></div></details><details class="calculation-detail" id="p-stress" hidden><summary>查看利润压力测试</summary><div class="table-wrap"><table><thead><tr><th>单因素变化（其他输入不变）</th><th>年度息税前经营结果</th></tr></thead><tbody id="scenarios"></tbody></table></div></details>
+  <p class="small">利润压力测试保持绵球产销量不变（产销量减少情景除外），并保持每公斤绵球加工费及副产品回收额不变；出绵率下降时，需要增加原料投入。它与原料模型的压力测试条件不同。计算使用未舍入值。</p>
  </div>
- <p class="small">静态盈亏平衡按当前价格、得率和固定成本计算，不等于安全开工率。实际订单、设备能力、库存和账期仍需另行核实。</p>
+ <p class="small">盈亏平衡按输入参数计算；实际订单、设备能力、库存和账期需另行核实。产量不等于销售回款，经营利润不等于可分红现金。</p>
 </section>
 <section class="calculator" id="raw-discussion">
- <h3>下一次沟通：把你们的原料与合作方式补齐</h3>
- <p>等你明天发来原料情况后，我们再逐项询问、整理实际参数。可以先从以下几方面谈，不要求一次准备齐全。</p>
- <ul><li>原料是什么：桑蚕或柞蚕、毛料或中间品、等级和加工阶段。</li><li>能供多少：来源、月度数量、季节变化、不同批次的稳定性。</li><li>采购多少钱：价格、水分与称重口径、税运、付款条件和库存。</li><li>能做出什么：试纺得率、成品质量、各段损耗及副产品归属。</li><li>怎样与工厂合作：直接销售、赊供、委托加工还是作价出资，如何结算。</li><li>你们承担什么：资金上限、垫资期限、货款与亏损风险、出资和利润分配。</li></ul>
- <p class="small">先分清“你们供料赚多少钱”和“工厂加工赚多少钱”，再讨论投资回报，避免内部结算重复计算。</p>
+ <h3>接下来补齐：原料与合作方式</h3>
+ <p>已明确原料类别、厂内精练制绵、绵球外卖及近一年产量范围。后续按下面几项补充，不要求一次准备齐全。</p>
+ <ul><li>原料配比与状态：各类数量、是否带蛹、含水、等级、桑蚕或柞蚕及批次稳定性。</li><li>实际投料与出绵：全年或同批次的投料、各等级绵球、落绵和其他副产品重量。</li><li>采购与销售：原料到厂单价、各级绵球销量与单价、税运、库存及账期。</li><li>加工费用：药剂、水电汽、人工、烘干、污水处理、制绵、包装与固定费用的划分。</li><li>怎样供料：直接销售、赊供、委托加工还是作价出资，定价与副产品归属如何约定。</li><li>怎样合资：投资金额、持股比例、垫资期限、货款风险与分红安排。</li></ul>
+ <p class="small">先分清“你们供料赚多少钱”和“工厂加工赚多少钱”，避免把内部结算重复计作项目收益。</p>
 </section>
 <div id="report">
 
 <p>调研截止：2026年9月27日｜对象：无行业经验、考虑新建或收购工厂的家庭投资者</p>
 <p><strong>阅读说明</strong></p>
 <p>这份报告把三类内容分开：带来源的行业事实；根据工艺和经营逻辑提出的调查建议；仅用于理解风险的假设测算。行业统计各有截止期，2026年全年数据尚不存在。本次未取得某一目标工厂的账簿、合同、许可证、真实试纺数据或设备正式报价，因此不能据此给出具体工厂的估值、必需投资额或承诺回本年限。</p>
-<p>建议先读01、03、11—15，再读生产技术部分。若准备现场考察，可直接使用16、17的资料清单和询问表。</p>
+<p><strong>本次项目阅读口径：</strong>已按2026年9月28日提供的信息明确为自行精练制绵、出售绵球的工厂。先看上方工厂数据与双模型；下文保留完整产业链背景，其中纺纱、绢丝规格与相关市场数据用于理解下游，不能直接代替本厂绵球的售价、需求或成本。现场考察可使用16、17的清单。</p>
 <h2 id="s01">01｜先说投资判断：一家绢纺厂究竟靠什么赚钱</h2>
 <p>绢纺是把适宜纺纱的蚕丝纤维整理、梳理、牵伸、加捻，制成绢丝或混纺纱的制造业。它有真实的服装、针织和面料客户，但投资成败取决于具体产品、原料、工艺、订单与现金流。不能仅凭“天然真丝”“国家支持传统产业”“附近养蚕多”来判断值得建厂。</p>
 <p>对新进入者，我建议的验证顺序是：确定客户和规格 → 采购代表性原料并试纺 → 算清合格产品成本 → 核实厂址和合规条件 → 比较新建与收购 → 确认资金可覆盖投产爬坡与回款周期。这是本报告的经营建议，并非强制性行业程序。</p>
 <p>一个项目至少要回答六个问题：</p>
 <ul>
 <li>买什么原料：蚕茧副产品、精干绵、绵球还是绵条？质量与采购价格是否可稳定复制？</li>
-<li>卖什么：纯桑蚕绢丝、柞蚕绢丝、丝棉或丝毛混纺？纱支、股数、捻度、包装是什么？</li>
+<li>卖什么：本厂已明确销售绵球，还需确定原料成分、产品等级、纤维长度、杂质、回潮与包装。下游绢丝的纱支、股数和捻度属于另一个产品环节。</li>
 <li>谁来做：谁负责配料、工艺、设备维修和质量？关键技术是否只掌握在卖方老板手里？</li>
 <li>卖给谁：已有批量复购客户，还是只有意向、样品或代理人承诺？</li>
 <li>钱何时回来：验收与账期如何约定？库存和应收款会占用多少资金？</li>
 <li>能否合法持续开工：设备、工艺、场地、污水去向和许可是否匹配？</li>
 </ul>
-<p>你们目前已明确“新建或收购工厂”，但地点、预算、是否自带精练脱胶、目标产品和技术团队尚未确定。这些会使项目成本产生很大差异。</p>
+<p>你们目前已明确共同投资、主要负责原料供应；所谈工厂自行精练脱胶与制绵，绵球直接外卖，近一年实际产量约300—400吨。地点、预算、交易方式、原料配比、真实财务与技术团队仍待核实。</p>
 <h2 id="s02">02｜先认清几个容易混淆的概念</h2>
 <div class="table-wrap"><table>
 <thead>
@@ -113,7 +140,7 @@
 <tr>
 <td>绢纺</td>
 <td>将整理后的蚕丝纤维按纺纱工艺制成绢丝</td>
-<td>本报告重点</td>
+<td>完整产业链背景；本次工厂以制绵、绵球外卖为终点</td>
 </tr>
 <tr>
 <td>绢丝</td>
@@ -193,7 +220,7 @@
 <p>贸易资料中，HS 5005对应非零售绢纺纱线，HS 5004则明确排除绢纺纱线；零售纱线及混纺归类还需进一步核定。因此仅搜“丝纱线出口”可能得到不同产品的数据。<a href="https://english.customs.gov.cn/Statics/73e27253-b8dd-4fd5-a6fa-478f02f68d63.html">海关官方分类表</a></p>
 <p>本次未获得可交叉核实的2026年全国纯绢纺企业完整数量、独立总营收、市场份额排名、平均净利润率或完整HS 5005分项数据。协会报告也说明部分产量绝对值未公开。网上将“丝绸产业规模”“绢纺和丝织加工收入”写成纯绢纺市场规模的做法，不宜用于投资测算。</p>
 <p>**本报告的判断：**可以继续寻找有真实竞争力的项目，但现有公开数据不足以支持“现在入场普遍容易赚钱”。对某家厂而言，订单结构和原料得率往往比全国增速更有决策价值。</p>
-<h2 id="s04">04｜原料：应该买的不是最便宜的一吨，而是成本合理的一公斤合格纱</h2>
+<h2 id="s04">04｜原料：关注每公斤合格绵球的材料成本</h2>
 <p>常见绢纺原料包括适宜使用的下脚茧、长吐、滞头（市场上也常见“汰头”等叫法）、屑丝、茧衣等；供应商也可能出售已经精练的精干绵、经过梳理的绵球或绵条。商业名称未必足以确定加工阶段，应拿实物、成分和检测结果确认。原料形态及精练污染特征可参照<a href="https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/kxxjszn/202106/W020210630413710633064.pdf">生态环境部HJ 1177—2021正式技术指南</a>。</p>
 <div class="table-wrap"><table>
 <thead>
@@ -239,7 +266,7 @@
 <p>建议建立至少两条经试纺合格的供应渠道，并在合同中写入批次、抽样、重量折算、质量复检、降价/退货及索赔处理。这里的“至少两条”是抗供应中断的管理建议，不是行业标准。</p>
 <p>**近期价格仅作为资金量级线索。**锦桥纺织网刊登的2026年9月15日嘉兴行情中，长吐为14.50—17.40万元/吨、条吐12.50—16.30万元/吨、汰头12.50—16.70万元/吨。这是商业资讯平台行情，未明确等级、含水、税运、付款或可成交数量，本次也未找到可对照的一手原表；不能视作已核实的可执行采购报价。同页白厂丝是生丝，不是绢丝售价。<a href="https://www.sinotex.cn/News/View.asp?id=266673">9月15日行情页</a></p>
 <h2 id="s05">05｜全生产流程：每一道工序在解决什么问题</h2>
-<p>以下为便于新手理解的典型路线。传统长流程、短流程、桑蚕/柞蚕、纯纺/混纺及外购中间品路线并不完全相同。</p>
+<p>以下为便于新手理解的完整典型路线。本次工厂的加工范围止于梳理制绵并出售绵球，后续纺纱与绢丝整理属于下游。传统长流程、短流程、桑蚕/柞蚕、纯纺/混纺及外购中间品路线并不完全相同。</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -303,7 +330,7 @@
 <p>生态环境部技术指南对绢纺精练废水列有较大的水量与污染负荷范围；不能把纯干纺项目“无生产废水”的情况套到自带精练的工厂。具体设计要按原料、设备、批次及实测水质做物料和水量平衡。<a href="https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/kxxjszn/202106/W020210630413710633064.pdf">HJ 1177—2021</a></p>
 <p>客户如果要求色纱，可选择有资质的外协染色或自己配置相关环节。原料染、纱线染、面料染对应不同工艺安排。增加染整会改变设备、客户认证、环保和资金需求，应单独立项核算。</p>
 <h2 id="s06">06｜产品规格与质量：能纺出来，还要能在客户机器上用</h2>
-<p>第一步应定义一个足够清楚的产品，例如：“某成分比例、某公制支数、双股、指定捻向捻度、筒装、用于某种针织设备的本色纱”。“高档绢丝”“出口级”都不能替代技术协议。</p>
+<p><strong>本厂销售绵球，应先明确成分、等级、纤维长度、杂质、回潮与验收规则，再让下游客户试用。</strong>以下纱线规格用于理解下游要求。</p><p>对于后续纺纱企业，第一步应定义一个足够清楚的产品，例如：“某成分比例、某公制支数、双股、指定捻向捻度、筒装、用于某种针织设备的本色纱”。“高档绢丝”“出口级”都不能替代技术协议。</p>
 <p>几个常见概念：</p>
 <ul>
 <li><strong>Nm（公制支数）</strong>：同质量下纱线越长，支数越高、纱越细。100 Nm单纱约为10 tex。</li>
@@ -484,43 +511,12 @@
 <p>第一笔是购地/租厂、工程与设备；第二笔是配电、消防、温湿度、环保等配套；第三笔是试产、认证、培训、初期损耗等启动费用；第四笔是持续采购、在制品、库存与应收款需要的流动资金。另需考虑融资费用、税费和应急储备。</p>
 <p>**一个可核验但不能外推的旧项目案例。**浙江圣环2018年《年产600吨高品味绢丝建设项目》规划投资1.5亿元，厂房40700平方米。但600吨由250吨蚕丝纤维条、250吨长纤绢丝和100吨短纤绢丝组成，即成品绢丝350吨；项目外购纤维、不含上游精练。这些是当年环评规划值，不能作为2026设备报价、实际投产结果或行业单位产能投资标准。<a href="https://www.zjshjkj.com/uploadfile/upfiles/201809290939275baed7cfcc686.pdf">环评原件</a></p>
 <p>设备报价应拆成：主机、配套、安装、运输、税、调试、备件、检验、培训、验收、改造及质保；至少获取可在同一条件下比较的多份方案。项目资金计划要落实每笔款的支付时间，而不只是一张总投资表。</p>
-<p><strong>下面全部是假设，用来演示风险，不是市场报价或预期收益。</strong></p>
-<p>假设年内生产并销售合格产品500吨，售价300元/公斤；投料采购价150元/公斤；从该投料到合格主产品的净得率60%；每公斤主产品可实现的副产品净回收额10元；其他变动成本20元；年度固定经营成本1500万元，包含折旧，不含利息和所得税。所有价格均按不含增值税口径。</p>
-<p>每公斤净变动成本 = 150 ÷ 60% − 10 + 20 = 260元。</p>
-<p>每公斤贡献 = 300 − 260 = 40元。</p>
-<p>年度息税前经营结果 = 50万公斤 × 40元 − 1500万元 = 500万元。</p>
-<p>静态盈亏平衡销量 = 1500万元 ÷ 40元 = 375吨，即假设500吨有效年产能的75%。</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>仅改变一个因素，其他不变</th>
-<th align="right">假设年度息税前经营结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>基础情景</td>
-<td align="right">盈利500万元</td>
-</tr>
-<tr>
-<td>售价下降5%，变成285元/公斤</td>
-<td align="right">亏损250万元</td>
-</tr>
-<tr>
-<td>原料价上涨10%，变成165元/公斤</td>
-<td align="right">亏损750万元</td>
-</tr>
-<tr>
-<td>净得率由60%降至55%</td>
-<td align="right">亏损约636万元</td>
-</tr>
-<tr>
-<td>产销降到350吨，固定成本不变</td>
-<td align="right">亏损100万元</td>
-</tr>
-</tbody></table></div>
-<p>这种敏感性说明：看似不大的原料、售价、得率变化，足以改变盈亏方向。实际各因素可能同时变化，不能只做一个乐观情景。副产品收入必须来自真实可售数量和净回收价格，不能既计入主产品得率又重复计价。</p>
-<p>这个模型尚未计算融资、所得税、递延回款、坏账、税款时差、维持性资本开支和建设期现金流，因此<strong>500万元不是净利润，更不是可分红现金</strong>。不能直接用总投资除以这个数宣称回本年限。</p>
-<p>流动资金应按“原料库存＋在制品＋成品库存＋应收款＋必要现金－正常应付款－客户预收款”计算，并做逐月预测。举例：假设年销售额1.5亿元、应收账期60天且均匀销售，平均应收款一项就约2466万元，尚未加库存占款。这同样是假设演示，不是行业标准账期。</p>
+<p><strong>本次绵球工厂的物料与资金测算。</strong>你提供的年实际绵球产量为300—400吨；主情景取350吨、综合出绵率暂设40%，对应全年投料875吨。这些是已说明边界的暂估数据，不是已核实生产台账或行业均值。<a href="#factory-data">查看完整数据表</a>。</p>
+<p>按原料计算：每公斤原料贡献＝绵球平均售价×综合出绵率－原料到厂价－每公斤原料变动加工费＋每公斤原料副产品净回收额；全年息税前经营结果＝每公斤原料贡献×年度投料公斤数－年度固定成本。</p>
+<p>按绵球计算：每公斤绵球贡献＝绵球平均售价－原料到厂价÷综合出绵率－每公斤绵球变动加工费＋每公斤绵球副产品净回收额；全年息税前经营结果＝每公斤绵球贡献×年度绵球产销公斤数－年度固定成本。</p>
+<p>相同经营条件换算后，两套结果应一致。加工费和副产品回收额必须随计量单位换算，落绵不得既算入绵球得率又重复计收入。当前价格与费用未获得，<strong>不输出预计利润或回本年限</strong>；上方计算器允许补齐后再测算。</p>
+<p>对350吨绵球，综合出绵率30%、40%、50%分别需要约1166.67、875、700吨原料。该差异直接改变全年原料金额；原料数量增加不代表相应质量和售价保持不变。</p>
+<p>流动资金按原料库存、在制品、成品库存、应收款和必要现金，扣除正常应付款与客户预收款后另做逐月预测。875吨原料的全年耗用金额不能直接当成一次性垫资；工厂息税前利润也不等于净利润、你们的供料利润或可分红现金。</p>
 <p>完整可行性研究应进一步计算：逐月现金最低点、融资余额、利息、本息偿付、维护投资、税后自由现金流、净现值与回报率，并对低开工率、原料上涨、质量退货和客户延迟付款做组合压力测试。</p>
 <h2 id="s12">12｜环保和准入：2026年的变化必须进入建厂与收购预算</h2>
 <p>是否含精练、除油、漂白、染色等湿处理，是项目边界中的关键问题。“不染色”并不必然等于“没有需要评估的前处理废水”。</p>
@@ -702,14 +698,14 @@
 <h2 id="s16">16｜第一次考察工厂，可以直接问的20个问题</h2>
 <ol>
 <li>过去12个月实际卖出的主要产品是什么？请给规格、数量、价格和回款。</li>
-<li>工厂从哪一种原料开始，在哪个环节对外销售？是否外包精练、染色或捻线？</li>
+<li>各类未精练原料的配比和含蛹情况是什么？请用记录核对厂内精练、烘干、制绵与绵球销售，是否有外包环节？</li>
 <li>同一规格最近三个批次的投入、产出、返工和副产品记录在哪里？</li>
 <li>所报得率从哪个阶段计算，含水口径是否一致？</li>
 <li>前五大原料供应商和客户分别是谁，是否存在关联交易？</li>
 <li>最近12个月最大质量投诉、退货和赔偿是什么原因？</li>
 <li>当前库存有多少，多久没动，哪些规格只能降价出售？</li>
 <li>应收款账龄如何，最大的逾期何时实际回款？</li>
-<li>所谓产能是原料处理量、中间品量、单纱量还是最终股线量？</li>
+<li>所报数量是原料处理量、精干绵还是合格绵球？是否包含落绵，实际产量与设备设计产能分别多少？</li>
 <li>以最主要销售规格连续运行时，实际日合格产量是多少？</li>
 <li>哪道工序是瓶颈，停机最多的设备是什么？</li>
 <li>设备逐台铭牌与权属能否核验，是否含淘汰型号？</li>
@@ -717,7 +713,7 @@
 <li>哪些成本被外包加工、关联方或其他主体承担？</li>
 <li>关键工艺、维修、销售人员离开后，谁能接替？</li>
 <li>环评批复、验收、排污许可/登记与当前实际一致吗？</li>
-<li>若有精练或染整，污水进入哪类设施，能力和费用依据是什么？</li>
+<li>本厂精练、洗涤废水进入哪类处理设施，处理能力、排放去向和费用依据是什么？</li>
 <li>GB 4287—2026实施后，还需要多少改造，谁出钱？</li>
 <li>过去是否有停产、处罚、诉讼、担保或质押？</li>
 <li>如果收购，你们为什么卖；如果新建合作，你们愿对哪些可验收指标负责？</li>
@@ -729,7 +725,7 @@
 <thead>
 <tr>
 <th>产品成分</th>
-<th>支数/股数/捻度</th>
+<th>绵球等级/长度/杂质/回潮</th>
 <th>用途</th>
 <th>月需求</th>
 <th>客户可接受价格及税口径</th>
@@ -757,8 +753,8 @@
 <th>来源批次</th>
 <th>到厂价/税口径</th>
 <th>水分重量口径</th>
-<th>精练/梳理/纺纱分段得率</th>
-<th>合格主产品</th>
+<th>精练/制绵分段得率及综合出绵率</th>
+<th>各等级合格绵球产量</th>
 <th>副产品净收入</th>
 <th>客户验收结果</th>
 </tr>
@@ -799,118 +795,127 @@
 <td>待填写</td>
 </tr>
 </tbody></table></div>
-<p>这三张表齐备后，才有条件从“了解行业”进入“判断某个项目”。目前最需要补充的是：计划投入的自有资金及总预算、拟选省市、有无明确标的、是否带精练、现有技术团队和客户来源。</p>
+<p>这三张表齐备后，才有条件从“了解行业”进入“判断某个项目”。目前已明确本厂自行精练并销售绵球；仍需补充自有资金及总预算、所在地、交易条件、原料配比、真实投料和销售台账、加工费用、技术团队与客户来源。</p>
 <h2 id="s18">18｜研究边界与自检</h2>
-<p>本次以国家部门正式文件、标准平台、行业协会/商会原文或署名转载、企业正式披露及项目环评为主要证据。公开资料查询日期为2026年9月27日；分别采用截至2025全年、2026一季度/二季度、2026年1—7月等可得数据，未把不同口径混写为“绢纺行业最新全年数据”。</p>
+<p>2026年9月28日新增本次绵球工厂情况、350吨与40%的暂估情景、875吨投料反推及双模型待填财务参数。工厂情况来自你的说明，尚未查验台账；历史技术资料仅作工艺口径参考，不作为当前行业平均得率。本报告其他行业资料以国家部门正式文件、标准平台、行业协会/商会原文或署名转载、企业正式披露及项目环评为主要证据，原查询日期为2026年9月27日；分别采用截至2025全年、2026一季度/二季度、2026年1—7月等可得数据，未把不同口径混写为“绢纺行业最新全年数据”。</p>
 <p>已检查：绢纺与缫丝区别；中间产品与成品产能区别；规上丝绸与绢纺数据区别；实际项目规划与行业报价区别；假设模型与市场事实区别；2026排水新规的过渡期；旧设备淘汰风险；盈利与现金流区别。</p>
 <p>仍待项目调查的事项：原料和成品可成交价格、代表性净得率、单位能耗与人工、真实订单、设备合同报价、工厂债务与历史环境责任、当地准入与污水接纳条件。这些缺口不能用行业平均数或营销承诺代替。</p>
 <p>本报告中的经营策略、尽调清单、阶段安排与测算公式属于基于上述证据的分析建议；公开数据不构成对任何企业投资价值的背书。</p>
 </div><div class="foot">本文件可离线阅读。测算在本机浏览器运行；外部来源链接需联网打开。调查范围和未解决问题见正文第18部分。</div></article></main>
 <script>
-
-const defaults={capacity:500,util:100,price:300,raw:150,yield:60,credit:10,variable:20,fixed:1500};
-const rawDefaults={quantity:833.333333333,raw:150,yield:60,price:300,variable:12,credit:6,fixed:1500};
+const defaults={output:350,yield:40,price:null,raw:null,variable:null,credit:null,fixed:null};
+const rawDefaults={quantity:875,yield:40,price:null,raw:null,variable:null,credit:null,fixed:null};
+const financeLabels={price:'绵球售价',raw:'原料到厂价',variable:'变动加工费',credit:'副产品净回收额',fixed:'年度固定成本'};
 const money=new Intl.NumberFormat('zh-CN',{maximumFractionDigits:2});
 const weight=new Intl.NumberFormat('zh-CN',{maximumFractionDigits:4});
 const byId=id=>document.getElementById(id);
-const formatProfit=n=>Math.abs(n)<1e-8?'持平 0 万元':(n<0?'亏损 ':'盈利 ')+money.format(Math.abs(n))+' 万元';
-function calculate(p){
- const y=p.yield/100,quantity=p.capacity*1000*p.util/100,rawQuantity=quantity/y;
- const cost=p.raw/y-p.credit+p.variable,contribution=p.price-cost;
- return {cost,contribution,quantity,rawQuantity,profit:(quantity*contribution-p.fixed*10000)/10000,
-  breakEven:contribution>0?p.fixed*10/contribution:null,
-  sales:quantity*p.price,creditTotal:quantity*p.credit,purchase:rawQuantity*p.raw,processing:quantity*p.variable,fixedTotal:p.fixed*10000};
+const known=(...values)=>values.every(v=>v!==null);
+const amount=v=>v===null?'待补参数':money.format(v/10000)+' 万元';
+const unitPrice=v=>v===null?'待填单价':money.format(v)+' 元';
+const formatProfit=v=>v===null?'待补参数':Math.abs(v)<1e-8?'持平 0 万元':(v<0?'亏损 ':'盈利 ')+money.format(Math.abs(v))+' 万元';
+function calculate(p,isRaw=false){
+ const y=p.yield/100,quantity=isRaw?p.quantity*1000*y:p.output*1000,rawQuantity=isRaw?p.quantity*1000:quantity/y;
+ const basis=isRaw?rawQuantity:quantity;
+ const cost=known(p.raw,p.variable,p.credit)?p.raw/(isRaw?1:y)+p.variable-p.credit:null;
+ const contribution=known(p.price,cost)?p.price*(isRaw?y:1)-cost:null;
+ return {quantity,rawQuantity,cost,contribution,
+  profit:known(contribution,p.fixed)?(basis*contribution-p.fixed*10000)/10000:null,
+  breakEven:known(contribution,p.fixed)&&contribution>0?p.fixed*10/contribution:null,
+  sales:p.price===null?null:quantity*p.price,purchase:p.raw===null?null:rawQuantity*p.raw,
+  processing:p.variable===null?null:basis*p.variable,creditTotal:p.credit===null?null:basis*p.credit,
+  fixedTotal:p.fixed===null?null:p.fixed*10000};
 }
-function calculateRaw(p){
- const rawQuantity=p.quantity*1000,quantity=rawQuantity*p.yield/100;
- const contribution=p.price*p.yield/100-p.raw-p.variable+p.credit;
- return {quantity,rawQuantity,contribution,profit:(rawQuantity*contribution-p.fixed*10000)/10000,
-  breakEven:contribution>0?p.fixed*10/contribution:null,
-  sales:quantity*p.price,creditTotal:rawQuantity*p.credit,purchase:rawQuantity*p.raw,processing:rawQuantity*p.variable,fixedTotal:p.fixed*10000};
-}
-window.calculateSilkScenario=calculate;
-window.calculateRawSilkScenario=calculateRaw;
+window.calculateSilkScenario=p=>calculate(p);
+window.calculateRawSilkScenario=p=>calculate(p,true);
 function read(isRaw){
  const prefix=isRaw?'r-':'',p={};
  for(const key of Object.keys(isRaw?rawDefaults:defaults)){
   const el=byId(prefix+key);
+  if(el.value.trim()===''&&key in financeLabels&&!el.validity.badInput){p[key]=null;continue;}
   if(el.value.trim()===''||!Number.isFinite(Number(el.value))||!el.checkValidity())return null;
   p[key]=Number(el.value);
  }
- const r=(isRaw?calculateRaw:calculate)(p);
- return Object.values(r).every(v=>v===null||Number.isFinite(v))?p:null;
+ return Object.values(calculate(p,isRaw)).every(v=>v===null||Number.isFinite(v))?p:null;
 }
-function profitText(id,value){const el=byId(id);el.textContent=formatProfit(value);el.className=value<0?'negative':value>0?'positive':'';}
+function profitText(id,value){
+ const el=byId(id);el.textContent=formatProfit(value);el.className=value===null?'pending':value<0?'negative':value>0?'positive':'';
+}
 function breakText(r,p,isRaw){
- const basis=isRaw?'原料投料':'合格成品产销',unit=isRaw?'原料':'合格成品';
+ if(r.profit===null)return '补齐全部财务参数后计算盈亏平衡；空白不按0元处理。';
+ const unit=isRaw?'原料':'绵球';
  if(r.contribution<=0){
   if(p.fixed===0)return r.contribution===0?'单位贡献和固定成本均为0，本模型下持平。':'每公斤'+unit+'贡献为负，零产量时持平，增加产量会扩大亏损。';
   return '每公斤'+unit+'贡献不为正，增加产量无法覆盖固定成本。';
  }
- let result='静态盈亏平衡'+basis+'量 '+weight.format(r.breakEven)+' 吨。';
- if(!isRaw&&p.capacity>0){result+='占当前有效成品产能 '+money.format(r.breakEven/p.capacity*100)+'%。';if(r.breakEven>p.capacity)result+='当前产能不足以达到盈亏平衡。';}
- if(isRaw)result+='对应合格成品 '+weight.format(r.breakEven*p.yield/100)+' 吨。';
- return result;
+ return '静态盈亏平衡'+(isRaw?'原料投料量':'绵球产销量')+' '+weight.format(r.breakEven)+' 吨。'+(isRaw?'对应绵球 '+weight.format(r.breakEven*p.yield/100)+' 吨。':'此数量不代表设备已经具备相应生产能力。');
 }
 function renderLedger(prefix,r,p,isRaw){
- const kg=v=>weight.format(v)+'公斤',price=v=>money.format(v)+'元',basis=isRaw?r.rawQuantity:r.quantity;
+ const kg=v=>weight.format(v)+'公斤',basis=isRaw?r.rawQuantity:r.quantity,neg=v=>v===null?null:-v;
  const rows=[
-  ['成品销售收入',kg(r.quantity)+' × '+price(p.price),r.sales],
-  ['副产品净收入',kg(basis)+(isRaw?'原料':'合格成品')+' × '+price(p.credit),r.creditTotal],
-  ['投入生产的原料成本',kg(r.rawQuantity)+'原料 × '+price(p.raw),-r.purchase],
-  ['其他变动加工费用',kg(basis)+(isRaw?'原料':'合格成品')+' × '+price(p.variable),-r.processing],
-  ['年度固定成本（含折旧）','按本年度固定费用假设',-r.fixedTotal],
-  ['年度息税前经营结果','上述收入减成本费用',r.profit*10000]
+  ['绵球销售收入',kg(r.quantity)+'绵球 × '+unitPrice(p.price),r.sales],
+  ['副产品净收入',kg(basis)+(isRaw?'原料':'绵球')+' × '+unitPrice(p.credit),r.creditTotal],
+  ['投入生产的原料成本',kg(r.rawQuantity)+'原料 × '+unitPrice(p.raw),neg(r.purchase)],
+  ['变动加工费用',kg(basis)+(isRaw?'原料':'绵球')+' × '+unitPrice(p.variable),neg(r.processing)],
+  ['年度固定成本（含折旧）',p.fixed===null?'待填年度固定成本':'按本年度固定费用假设',neg(r.fixedTotal)],
+  ['年度息税前经营结果','上述收入减成本费用',r.profit===null?null:r.profit*10000]
  ];
  const body=byId(prefix+'ledger');body.replaceChildren();
- for(const [name,formula,amount] of rows){const tr=document.createElement('tr');for(const value of [name,formula,money.format(amount/10000)]){const td=document.createElement('td');td.textContent=value;tr.append(td);}body.append(tr);}
+ for(const [name,formula,value] of rows){const tr=document.createElement('tr');for(const text of [name,formula,value===null?'待补参数':money.format(value/10000)]){const td=document.createElement('td');td.textContent=text;tr.append(td);}body.append(tr);}
 }
 function renderScenarios(isRaw,p){
  const body=byId(isRaw?'r-scenarios':'scenarios');body.replaceChildren();
- const cases=[['当前输入',p],['成品售价下调5%',{...p,price:p.price*.95}],['原料到厂成本上涨10%',{...p,raw:p.raw*1.1}],
-  ['净得率降低5个百分点',p.yield>5?{...p,yield:p.yield-5}:null],
-  [isRaw?'原料投料量降至当前的70%':'成品产销水平降至当前的70%',isRaw?{...p,quantity:p.quantity*.7}:{...p,util:p.util*.7}]];
+ const cases=[['当前输入',p],['绵球售价下调5%',{...p,price:p.price*.95}],['原料到厂成本上涨10%',{...p,raw:p.raw*1.1}],
+  ['综合出绵率降低5个百分点',p.yield>5?{...p,yield:p.yield-5}:null],
+  [isRaw?'原料投料量降至当前的70%':'绵球产销量降至当前的70%',isRaw?{...p,quantity:p.quantity*.7}:{...p,output:p.output*.7}]];
  for(const [name,scenario] of cases){
   const tr=document.createElement('tr'),label=document.createElement('td'),value=document.createElement('td');label.textContent=name;
   if(scenario===null)value.textContent='得率过低，不适用此情景';
-  else {const result=(isRaw?calculateRaw:calculate)(scenario).profit;value.textContent=formatProfit(result);value.className=result<0?'negative':result>0?'positive':'';}
+  else {const result=calculate(scenario,isRaw).profit;value.textContent=Number.isFinite(result)?formatProfit(result):'数值过大，无法测算';value.className=result<0?'negative':result>0?'positive':'';}
   tr.append(label,value);body.append(tr);
  }
 }
 function update(isRaw){
- const p=read(isRaw),prefix=isRaw?'r-':'';
+ const p=read(isRaw),prefix=isRaw?'r-':'',detailPrefix=isRaw?'r-':'p-';
  byId(prefix+'outputs').hidden=!p;byId(isRaw?'r-copy':'copy-to-raw').disabled=!p;
- byId(prefix+'error').textContent=p?'':'请填写有效数值：金额与数量不能小于0；得率必须大于0且不超过100%；成品产销水平为0至100%。';
+ byId(prefix+'error').textContent=p?'':'请填写有效数量与出绵率：数量不能小于0；出绵率必须大于0且不超过100%。财务参数可暂留空，填写时不能为负数；数值过大时请缩小。';
  if(!p)return;
- const r=(isRaw?calculateRaw:calculate)(p);
+ const r=calculate(p,isRaw),missing=Object.keys(financeLabels).filter(key=>p[key]===null);
  profitText(prefix+'profit',r.profit);byId(prefix+'breakeven').textContent=breakText(r,p,isRaw);
+ byId(detailPrefix+'missing').textContent=missing.length?'利润暂未计算。待补：'+missing.map(key=>financeLabels[key]).join('、')+'。确认没有的项目请填0。':'财务参数已补齐；结果取决于输入假设，不代表已核实利润。';
+ byId(detailPrefix+'stress').hidden=r.profit===null;
+ const physical='年度绵球 '+weight.format(r.quantity/1000)+' 吨；原料投料 '+weight.format(r.rawQuantity/1000)+' 吨；出绵率 '+money.format(p.yield)+'%。';
  if(isRaw){
-  byId('r-purchase').textContent=money.format(r.purchase/10000)+' 万元';
-  byId('r-output').textContent=weight.format(r.quantity/1000)+' 吨成品';
-  byId('r-formula').textContent='每公斤原料贡献 = '+money.format(p.price)+' × '+money.format(p.yield)+'% − '+money.format(p.raw)+' − '+money.format(p.variable)+' + '+money.format(p.credit)+' = '+money.format(r.contribution)+' 元。全年经营结果 = '+money.format(r.contribution)+'元 × '+weight.format(r.rawQuantity)+'公斤原料 − '+money.format(p.fixed)+'万元固定成本。（单位贡献显示值经四舍五入，计算使用未舍入值。）';
+  byId('r-purchase').textContent=p.raw===null?'待填原料价':amount(r.purchase);
+  byId('r-output').textContent=weight.format(r.quantity/1000)+' 吨绵球';
+  byId('r-formula').textContent=r.profit===null?physical+'投入原料 × 出绵率 = 绵球产量。财务参数待补，不据此推断盈亏。':
+   '每公斤原料贡献 = '+money.format(p.price)+' × '+money.format(p.yield)+'% − '+money.format(p.raw)+' − '+money.format(p.variable)+' + '+money.format(p.credit)+' = '+money.format(r.contribution)+' 元。全年经营结果 = 单位贡献 × '+weight.format(r.rawQuantity)+'公斤原料 − '+money.format(p.fixed)+'万元固定成本。';
  }else{
-  byId('cost').textContent=money.format(r.cost)+' 元';byId('contribution').textContent=money.format(r.contribution)+' 元';
-  byId('p-quantities').textContent='当前预计产销 '+weight.format(r.quantity/1000)+' 吨合格成品，需要投入 '+weight.format(r.rawQuantity/1000)+' 吨原料，年度原料款 '+money.format(r.purchase/10000)+' 万元。';
-  byId('p-formula').textContent='每公斤成品贡献 = '+money.format(p.price)+' − '+money.format(p.raw)+' ÷ '+money.format(p.yield)+'% − '+money.format(p.variable)+' + '+money.format(p.credit)+' = '+money.format(r.contribution)+' 元。全年经营结果 = '+money.format(r.contribution)+'元 × '+weight.format(r.quantity)+'公斤成品 − '+money.format(p.fixed)+'万元固定成本。（单位贡献显示值经四舍五入，计算使用未舍入值。）';
+  byId('p-raw-needed').textContent=weight.format(r.rawQuantity/1000)+' 吨原料';
+  byId('cost').textContent=r.cost===null?'待补参数':money.format(r.cost)+' 元';
+  byId('p-quantities').textContent=physical+'预计全年原料金额：'+(p.raw===null?'待填原料价。':amount(r.purchase)+'。');
+  byId('p-formula').textContent=r.profit===null?'原料投料量 = 绵球产量 ÷ 出绵率。利润需补齐财务参数；所填产量暂按本年全部生产并售出，不代表设备产能。':
+   '每公斤绵球贡献 = '+money.format(p.price)+' − '+money.format(p.raw)+' ÷ '+money.format(p.yield)+'% − '+money.format(p.variable)+' + '+money.format(p.credit)+' = '+money.format(r.contribution)+' 元。全年经营结果 = 单位贡献 × '+weight.format(r.quantity)+'公斤绵球 − '+money.format(p.fixed)+'万元固定成本。';
  }
- renderLedger(isRaw?'r-':'p-',r,p,isRaw);renderScenarios(isRaw,p);
+ renderLedger(detailPrefix,r,p,isRaw);
+ if(r.profit!==null)renderScenarios(isRaw,p);else byId(isRaw?'r-scenarios':'scenarios').replaceChildren();
 }
-function fill(isRaw,values){for(const [key,value] of Object.entries(values))byId((isRaw?'r-':'')+key).value=Number(value.toPrecision(12));update(isRaw);}
+function fill(isRaw,values){for(const [key,value] of Object.entries(values))byId((isRaw?'r-':'')+key).value=value===null?'':Number(value.toPrecision(12));update(isRaw);}
+function convert(value,factor){return value===null?null:value*factor;}
 for(const isRaw of [true,false]){
  const prefix=isRaw?'r-':'';
  for(const key of Object.keys(isRaw?rawDefaults:defaults))byId(prefix+key).addEventListener('input',()=>{byId(isRaw?'r-status':'p-status').textContent='';update(isRaw);});
- byId(prefix+'reset').addEventListener('click',()=>{fill(isRaw,isRaw?rawDefaults:defaults);byId(isRaw?'r-status':'p-status').textContent='已恢复本模型教学假设，另一模型未改变。';});
+ byId(prefix+'reset').addEventListener('click',()=>{fill(isRaw,isRaw?rawDefaults:defaults);byId(isRaw?'r-status':'p-status').textContent='已恢复350吨绵球、40%出绵率的暂估情景，财务参数已清空；另一模型未改变。';});
 }
 byId('copy-to-raw').addEventListener('click',()=>{
  const p=read(false);if(!p)return;const y=p.yield/100;
- fill(true,{quantity:p.capacity*p.util/100/y,raw:p.raw,yield:p.yield,price:p.price,variable:p.variable*y,credit:p.credit*y,fixed:p.fixed});
- byId('r-status').textContent='已从成品模型换算：原料量 = 成品产销量÷得率；加工费和副产品回收额 = 对应成品单价×得率。尾数可能有极小舍入差异。';
+ fill(true,{quantity:p.output/y,raw:p.raw,yield:p.yield,price:p.price,variable:convert(p.variable,y),credit:convert(p.credit,y),fixed:p.fixed});
+ byId('r-status').textContent='已换算：原料量 = 绵球产销量÷出绵率；每公斤原料加工费及副产品回收额 = 对应绵球单价×出绵率。待填项保持空白。';
  byId('raw-title').focus({preventScroll:true});byId('raw-model').scrollIntoView({behavior:'smooth'});
 });
 byId('r-copy').addEventListener('click',()=>{
  const p=read(true);if(!p)return;const y=p.yield/100;
- fill(false,{capacity:p.quantity*y,util:100,raw:p.raw,yield:p.yield,price:p.price,variable:p.variable/y,credit:p.credit/y,fixed:p.fixed});
- byId('p-status').textContent='已从原料模型换算：本次推算成品量填入产能，产销水平设为100%；加工费和副产品回收额 = 对应原料单价÷得率。此处产能仅用于对账，不代表已核验的设备能力。尾数可能有极小舍入差异。';
+ fill(false,{output:p.quantity*y,raw:p.raw,yield:p.yield,price:p.price,variable:convert(p.variable,1/y),credit:convert(p.credit,1/y),fixed:p.fixed});
+ byId('p-status').textContent='已换算：绵球产销量 = 原料投料量×出绵率；每公斤绵球加工费及副产品回收额 = 对应原料单价÷出绵率。待填项保持空白。';
  byId('product-title').focus({preventScroll:true});byId('product-model').scrollIntoView({behavior:'smooth'});
 });
 for(const h of document.querySelectorAll('#report h2')){const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;byId('toc').append(a);}
